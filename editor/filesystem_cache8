@@ -1,18 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1698255806
+::res://::1698260965
 icon.svg::CompressedTexture2D::1901304913145794971::1698213645::1698213652::1::::<><>::
-::res://Assets/::1698254036
-::res://Assets/Tiles/::1698256610
-Dog Body (Turned) - LDHD.png::CompressedTexture2D::6492046247859042475::1698254595::1698255807::1::::<><>::
-Dog Body (vertical) - LDHD.png::CompressedTexture2D::8915028570301527041::1698254727::1698255807::1::::<><>::
-Dog Body - LDHD.png::CompressedTexture2D::6320478695750338306::1698254367::1698255807::1::::<><>::
-Dog Head (vertical).png::CompressedTexture2D::338119313117934016::1698256091::1698255858::1::::<><>::
-Dog Head - LDHD.png::CompressedTexture2D::1526981396279708307::1698255267::1698255807::1::::<><>::
-Dog Tail (vertical) - LDHD.png::CompressedTexture2D::4574622299278376674::1698256610::1698256612::1::::<><>::
-Dog Tail - LDHD.png::CompressedTexture2D::4064756176515394479::1698256393::1698256612::1::::<><>::
-::res://Scenes/::1698255900
-main.tscn::PackedScene::184981153413853730::1698255900::0::1::::<><>::uid://cyq2b2rckdwxn::::res://Assets/Tiles/Dog Body (Turned) - LDHD.png
-player.tscn::PackedScene::885291137832743372::1698217521::0::1::::<><>::res://Scripts/playercontroller.gd
+::res://Assets/::1698260953
+::res://Assets/Sprites/::1698260964
+Dog Body (Turned) - LDHD.png::CompressedTexture2D::6492046247859042475::1698254595::1698260965::1::::<><>::
+Dog Body (vertical) - LDHD.png::CompressedTexture2D::8915028570301527041::1698254727::1698260965::1::::<><>::
+Dog Body - LDHD.png::CompressedTexture2D::6320478695750338306::1698254367::1698260965::1::::<><>::
+Dog Head (vertical).png::CompressedTexture2D::6343924100139162534::1698256091::1698260965::1::::<><>::
+Dog Head - LDHD.png::CompressedTexture2D::4578865214672295647::1698255267::1698260965::1::::<><>::
+Dog Tail (vertical) - LDHD.png::CompressedTexture2D::7669007412998169248::1698257102::1698260958::1::::<><>::
+Dog Tail - LDHD.png::CompressedTexture2D::8753243604532599563::1698256393::1698260965::1::::<><>::
+::res://Assets/Tiles/::1698260964
+::res://Scenes/::1698260965
+body.tscn::PackedScene::3087216840740864913::1698260965::0::1::::<><>::uid://cwbxmi7nbityw::::res://Assets/Sprites/Dog Body - LDHD.png
+main.tscn::PackedScene::184981153413853730::1698260957::0::1::::<><>::
+player.tscn::PackedScene::885291137832743372::1698260965::0::1::::<><>::res://Scripts/playercontroller.gd<>uid://b6ibigynng2cp::::res://Assets/Sprites/Dog Head - LDHD.png
 start.tscn::PackedScene::8657322215254843395::1698217163::0::1::::<><>::
 ::res://Scripts/::1698250240
 playercontroller.gd::GDScript::-1::1698250240::0::1::::<>CharacterBody2D<>::
