@@ -1,3 +1,2 @@
-res://Scenes/start.tscn
-res://Scenes/player.tscn
+res://Scenes/main.tscn
 res://Scripts/playercontroller.gd
