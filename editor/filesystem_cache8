@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1698260965
+::res://::1698302536
 icon.svg::CompressedTexture2D::1901304913145794971::1698213645::1698213652::1::::<><>::
 ::res://Assets/::1698260953
 ::res://Assets/Sprites/::1698260965
@@ -10,18 +10,18 @@ Dog Head (vertical).png::CompressedTexture2D::6343924100139162534::1698256091::1
 Dog Head - LDHD.png::CompressedTexture2D::4578865214672295647::1698255267::1698260965::1::::<><>::
 Dog Tail (vertical) - LDHD.png::CompressedTexture2D::7669007412998169248::1698257102::1698260958::1::::<><>::
 Dog Tail - LDHD.png::CompressedTexture2D::8753243604532599563::1698256393::1698260965::1::::<><>::
-::res://Assets/Tiles/::1698268793
+::res://Assets/Tiles/::1698302434
+background tileset.png::CompressedTexture2D::3206909645115909948::1698302434::1698302536::1::::<><>::
 Flower1.png::CompressedTexture2D::1611129180133272849::1698268655::1698268793::1::::<><>::
 Flower2.png::CompressedTexture2D::216462404614529605::1698268773::1698268793::1::::<><>::
 Grass0.png::CompressedTexture2D::1358892778556027512::1698268594::1698268793::1::::<><>::
 Grass1.png::CompressedTexture2D::9025423508968703487::1698268359::1698268793::1::::<><>::
 Grass2.png::CompressedTexture2D::8909861309143108405::1698268507::1698268793::1::::<><>::
-Background TileMap.png::CompressedTexture2D::7728515503956669986::1698268977::1698268977::1::::<><>::
-::res://Scenes/::1698263694
-body.tscn::PackedScene::3087216840740864913::1698260965::0::1::::<><>::uid://cwbxmi7nbityw::::res://Assets/Sprites/Dog Body - LDHD.png
-main.tscn::PackedScene::184981153413853730::1698263694::0::1::::<><>::uid://mu3u60mw0ys7::::res://Scenes/player.tscn<>uid://bj8qal6tvc3xt::::res://Scenes/body.tscn<>uid://dwv1ynepk52ky::::res://Scenes/tail.tscn
-player.tscn::PackedScene::885291137832743372::1698261671::0::1::::<><>::res://Scripts/playercontroller.gd<>uid://b6ibigynng2cp::::res://Assets/Sprites/Dog Head - LDHD.png
-tail.tscn::PackedScene::8748390734495791432::1698261631::0::1::::<><>::uid://dwyev4wlkb7ad::::res://Assets/Sprites/Dog Tail - LDHD.png
+::res://Scenes/::1698299225
+body.tscn::PackedScene::3087216840740864913::1698260965::0::1::::<><>::uid://cwbxmi7nbityw
+main.tscn::PackedScene::184981153413853730::1698299225::0::1::::<><>::uid://w7pcd6avhnif::::res://Assets/Tiles/Flower1.png<>uid://dc4dsovn728h::::res://Assets/Tiles/Flower2.png<>uid://tmi1a7ic3745::::res://Assets/Tiles/Grass0.png<>uid://d1t8n28rhprhf::::res://Assets/Tiles/Grass1.png<>uid://dy7ad42h02ih6::::res://Assets/Tiles/Grass2.png
+player.tscn::PackedScene::885291137832743372::1698261671::0::1::::<><>::res://Scripts/playercontroller.gd<>uid://b6ibigynng2cp
 start.tscn::PackedScene::8657322215254843395::1698217163::0::1::::<><>::
+tail.tscn::PackedScene::8748390734495791432::1698261631::0::1::::<><>::uid://dwyev4wlkb7ad
 ::res://Scripts/::1698250240
 playercontroller.gd::GDScript::-1::1698250240::0::1::::<>CharacterBody2D<>::
