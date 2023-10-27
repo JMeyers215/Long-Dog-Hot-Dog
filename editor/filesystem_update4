@@ -1,5 +1,6 @@
-res://Scenes/main.tscn
-res://Scenes/start.tscn
+res://Scenes/tail.tscn
 res://Scenes/player.tscn
 res://Scenes/body.tscn
-res://Scenes/tail.tscn
+res://Scenes/main.tscn
+res://Scenes/start.tscn
+res://Scripts/playercontroller.gd
