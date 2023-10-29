@@ -1,5 +1,5 @@
-Label
 CollisionShape2D
+Label
 Area2D
 CharacterBody2D
 RayCast2D
