@@ -1,5 +1,7 @@
-StaticBody2D
+CharacterBody2D
 RigidBody2D
+RayCast2D
+StaticBody2D
 MeshInstance2D
 Control
 Container
@@ -7,8 +9,6 @@ Timer
 CollisionShape2D
 Label
 Area2D
-CharacterBody2D
-RayCast2D
 Sprite2D
 PanelContainer
 Camera2D
