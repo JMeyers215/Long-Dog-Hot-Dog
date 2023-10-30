@@ -6,3 +6,4 @@ res://Scenes/start.tscn
 res://Scenes/player.tscn
 res://Scenes/body.tscn
 res://Scenes/hot_dog.tscn
+res://Scripts/body.gd
