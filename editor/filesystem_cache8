@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1698775842
+::res://::1698777256
 icon.svg::CompressedTexture2D::1901304913145794971::1698213645::1698213652::1::::<><>::
 ::res://Assets/::1698260953
-::res://Assets/Sprites/::1698775767
+::res://Assets/Sprites/::1698776671
 Dog Body (Turned) - LDHD.png::CompressedTexture2D::6492046247859042475::1698254595::1698260965::1::::<><>::
 Dog Body (vertical) - LDHD.png::CompressedTexture2D::8915028570301527041::1698254727::1698260965::1::::<><>::
 Dog Body - LDHD.png::CompressedTexture2D::6320478695750338306::1698254367::1698260965::1::::<><>::
@@ -10,25 +10,20 @@ Dog Head (vertical).png::CompressedTexture2D::6343924100139162534::1698256091::1
 Dog Head - LDHD.png::CompressedTexture2D::4578865214672295647::1698255267::1698260965::1::::<><>::
 Dog Tail (vertical) - LDHD.png::CompressedTexture2D::7669007412998169248::1698257102::1698260958::1::::<><>::
 Dog Tail - LDHD.png::CompressedTexture2D::8753243604532599563::1698256393::1698260965::1::::<><>::
-Long Dog Hot Dog - Hot Dog Sprite.png::CompressedTexture2D::5753094920594470922::1698303306::1698303308::1::::<><>::
-long dog sprite sheet.png::CompressedTexture2D::6587929524559053920::1698775764::1698775767::1::::<><>::
+Long Dog Hot Dog - Hot Dog Sprite.png::CompressedTexture2D::5753094920594470922::1698776668::1698776671::1::::<><>::
 Score Container.png::CompressedTexture2D::551177226322100391::1698440717::1698440719::1::::<><>::
-::res://Assets/Tiles/::1698348884
-background tileset.png::CompressedTexture2D::3206909645115909948::1698302434::1698302536::1::::<><>::
+::res://Assets/Tiles/::1698777799
+background tileset.png::CompressedTexture2D::3206909645115909948::1698776622::1698776625::1::::<><>::
 Flower1.png::CompressedTexture2D::1611129180133272849::1698268655::1698268793::1::::<><>::
 Flower2.png::CompressedTexture2D::216462404614529605::1698268773::1698268793::1::::<><>::
 Grass0.png::CompressedTexture2D::1358892778556027512::1698268594::1698268793::1::::<><>::
 Grass1.png::CompressedTexture2D::9025423508968703487::1698268359::1698268793::1::::<><>::
 Grass2.png::CompressedTexture2D::8909861309143108405::1698268507::1698268793::1::::<><>::
+long dog sprite sheet.png::CompressedTexture2D::6587929524559053920::1698776308::1698776230::1::::<><>::
+walls2 tileset.png::CompressedTexture2D::6795187746286977866::1698777934::1698777935::1::::<><>::
 walls tileset.png::CompressedTexture2D::6073980136341730032::1698347888::1698348884::1::::<><>::
-::res://Scenes/::1698774946
-body.tscn::PackedScene::3087216840740864913::1698774946::0::1::::<><>::uid://cwbxmi7nbityw::::res://Assets/Sprites/Dog Body - LDHD.png<>res://Scripts/body.gd
-hot_dog.tscn::PackedScene::3071409026458603559::1698774946::0::1::::<><>::uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png
-main.tscn::PackedScene::184981153413853730::1698774946::0::1::::<><>::res://Scripts/gamemanager.gd<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://cssjthvrbrxxo::::res://Assets/Tiles/walls tileset.png<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://h382qq7a2f3d::::res://Assets/Sprites/Score Container.png<>uid://mu3u60mw0ys7::::res://Scenes/player.tscn<>uid://bj8qal6tvc3xt::::res://Scenes/body.tscn<>uid://dwv1ynepk52ky::::res://Scenes/tail.tscn<>uid://bj02wmtf61c5d::::res://Scenes/hot_dog.tscn
-player.tscn::PackedScene::885291137832743372::1698774946::0::1::::<><>::res://Scripts/playercontroller.gd<>uid://cwnbrdsxccv3k::::res://Assets/Sprites/Dog Head (vertical).png
-start.tscn::PackedScene::8657322215254843395::1698774946::0::1::::<><>::
-tail.tscn::PackedScene::8748390734495791432::1698774946::0::1::::<><>::res://Scripts/body.gd<>uid://dhi6ow8a3bxb1::::res://Assets/Sprites/Dog Tail (vertical) - LDHD.png
-::res://Scripts/::1698732188
-body.gd::GDScript::-1::1698732188::0::1::::Body<>Node2D<>::
-gamemanager.gd::GDScript::-1::1698616182::0::1::::<>Node2D<>::
-playercontroller.gd::GDScript::-1::1698691812::0::1::::<>CharacterBody2D<>::
+::res://Scenes/::1698777157
+main.tscn::PackedScene::184981153413853730::1698777157::0::1::::<><>::res://Scripts/gamemanager.gd<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://c04iibxwfu801::::res://Assets/Tiles/long dog sprite sheet.png<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png
+start.tscn::PackedScene::3214578671550167500::1698777157::0::1::::<><>::
+::res://Scripts/::1698776487
+gamemanager.gd::GDScript::-1::1698776487::0::1::::<>Node2D<>::
