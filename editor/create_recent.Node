@@ -1,3 +1,6 @@
+Control
+Button
+RichTextLabel
 Label
 Timer
 TileMap
@@ -6,7 +9,6 @@ RigidBody2D
 RayCast2D
 StaticBody2D
 MeshInstance2D
-Control
 Container
 CollisionShape2D
 Area2D

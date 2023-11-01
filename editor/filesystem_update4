@@ -1,3 +1,4 @@
 res://Scenes/main.tscn
-res://Scripts/gamemanager.gd
+res://Scripts/UIController.gd
 res://Scenes/start.tscn
+res://Scripts/MenuController.gd
