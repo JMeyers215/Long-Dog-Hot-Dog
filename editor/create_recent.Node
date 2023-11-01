@@ -1,3 +1,4 @@
+Label
 Timer
 TileMap
 CharacterBody2D
@@ -8,7 +9,6 @@ MeshInstance2D
 Control
 Container
 CollisionShape2D
-Label
 Area2D
 Sprite2D
 PanelContainer
