@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1698856462
+::res://::1698948158
 icon.svg::CompressedTexture2D::1901304913145794971::1698213645::1698213652::1::::<><>::
 ::res://Assets/::1698260953
 ::res://Assets/Sprites/::1698820327
@@ -24,8 +24,14 @@ long cat sprite sheet.png::CompressedTexture2D::266973096974608347::1698819132::
 long dog sprite sheet.png::CompressedTexture2D::6587929524559053920::1698819117::1698819215::1::::<><>::
 walls2 tileset.png::CompressedTexture2D::6795187746286977866::1698777934::1698777935::1::::<><>::
 walls tileset.png::CompressedTexture2D::6073980136341730032::1698347888::1698348884::1::::<><>::
-::res://Scenes/::1698823780
-main.tscn::PackedScene::184981153413853730::1698823780::0::1::::<><>::res://Scripts/gamemanager.gd<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://c04iibxwfu801::::res://Assets/Tiles/long dog sprite sheet.png<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://h382qq7a2f3d::::res://Assets/Sprites/Score Container.png<>uid://c32v0qkdq5uqk::::res://Assets/Tiles/walls2 tileset.png<>uid://d2lajetu26kt::::res://Assets/Tiles/long cat sprite sheet.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png
-start.tscn::PackedScene::3214578671550167500::1698823216::0::1::::<><>::
-::res://Scripts/::1698823214
-gamemanager.gd::GDScript::-1::1698823214::0::1::::<>Node2D<>::
+::res://Scenes/::1698948152
+main.tscn::PackedScene::184981153413853730::1698948152::0::1::::<><>::res://Scripts/gamemanager.gd<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://c04iibxwfu801::::res://Assets/Tiles/long dog sprite sheet.png<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://h382qq7a2f3d::::res://Assets/Sprites/Score Container.png<>uid://c32v0qkdq5uqk::::res://Assets/Tiles/walls2 tileset.png<>uid://d2lajetu26kt::::res://Assets/Tiles/long cat sprite sheet.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>res://Scripts/UIController.gd
+options.tscn::PackedScene::1413699212774315797::1698948152::0::1::::<><>::
+start.tscn::PackedScene::3214578671550167500::1698948152::0::1::::<><>::res://Scripts/MenuController.gd<>res://Scripts/Options.gd
+store.tscn::PackedScene::9007599689276024801::1698948152::0::1::::<><>::
+::res://Scripts/::1698891592
+gamemanager.gd::GDScript::-1::1698891591::0::1::::<>Node2D<>::
+global.gd::GDScript::-1::1698891592::0::1::::<>Node<>::
+MenuController.gd::GDScript::-1::1698890084::0::1::::<>Control<>::
+Options.gd::GDScript::-1::1698873980::0::1::::<>Control<>::
+UIController.gd::GDScript::-1::1698867133::0::1::::<>Control<>::

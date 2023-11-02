@@ -1,9 +1,5 @@
-res://Scenes/main.tscn
-res://Scripts/UIController.gd
 res://Scenes/start.tscn
-res://Scripts/MenuController.gd
+res://Scenes/main.tscn
 res://Scenes/options.tscn
-res://Scripts/Options.gd
-res://Scripts/global.gd
 res://Scenes/store.tscn
 res://Scripts/gamemanager.gd
