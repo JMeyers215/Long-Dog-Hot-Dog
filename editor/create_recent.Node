@@ -1,7 +1,8 @@
-Control
-Button
-RichTextLabel
 Label
+Button
+Control
+ItemList
+RichTextLabel
 Timer
 TileMap
 CharacterBody2D
