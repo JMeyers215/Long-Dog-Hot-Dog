@@ -1,7 +1,9 @@
-AudioStreamPlayer
-Label
-Button
 Control
+Label
+CheckButton
+GraphEdit
+AudioStreamPlayer
+Button
 ItemList
 RichTextLabel
 Timer
@@ -10,14 +12,3 @@ CharacterBody2D
 RigidBody2D
 RayCast2D
 StaticBody2D
-MeshInstance2D
-Container
-CollisionShape2D
-Area2D
-Sprite2D
-PanelContainer
-Camera2D
-CollisionPolygon2D
-MenuButton
-PopupMenu
-MenuBar
