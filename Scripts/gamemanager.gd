@@ -2,6 +2,8 @@ extends Node2D
 
 var tilemap : TileMap
 var longdog_body = [Vector2(24,15),Vector2(23,15),Vector2(22,15)]
+var old_head_pos
+var new_head
 var longdog_direction = Vector2(1,0)
 var add_hotdog : bool = false
 
@@ -36,7 +38,9 @@ func _ready():
 		$UIController/FishCount.visible = true
 		$UIController/DogCount2.visible = false
 		$UIController/DogCount.visible = false
-
+	
+	old_head_pos = longdog_body[0]
+	
 	tilemap = $MainMap
 	timer = get_node("MovementTick")
 	hotdog_pos = place_hotdog()
@@ -84,7 +88,6 @@ func draw_longdog():
 		else:
 			var prev_block = longdog_body[block_index + 1] - block
 			var next_block = longdog_body[block_index - 1] - block
-			
 			if prev_block.x == next_block.x:
 				$MainMap.set_cell(longdog,Vector2(block.x,block.y),longdog,Vector2(2,1))
 			if prev_block.y == next_block.y:
@@ -109,14 +112,16 @@ func relation2(first_block:Vector2,second_block:Vector2):
 func move_longdog():
 	if add_hotdog:
 		var body_copy = longdog_body.slice(0,longdog_body.size(), 1, false)
-		var new_head = body_copy[0] + longdog_direction
+		new_head = body_copy[0] + longdog_direction
+		old_head_pos = body_copy[0]
 		body_copy.insert(0, new_head)
 		delete_tiles(longdog)
 		longdog_body = body_copy
 		add_hotdog = false
 	else:
 		var body_copy = longdog_body.slice(0,longdog_body.size()-1, 1, false)
-		var new_head = body_copy[0] + longdog_direction
+		new_head = body_copy[0] + longdog_direction
+		old_head_pos = body_copy[0]
 		body_copy.insert(0, new_head)
 		delete_tiles(longdog)
 		longdog_body = body_copy
@@ -145,16 +150,16 @@ func delete_tiles(id: int):
 
 func _input(event):
 	if Input.is_action_just_pressed("move_f"):
-		if not longdog_direction == Vector2(0,1):
+		if not longdog_direction == Vector2(0,1) and not relation2(old_head_pos,new_head) == "down":
 			longdog_direction = Vector2(0,-1)
 	if Input.is_action_just_pressed("move_b"):
-		if not longdog_direction == Vector2(0,-1):
+		if not longdog_direction == Vector2(0,-1) and not relation2(old_head_pos,new_head) == "up":
 			longdog_direction = Vector2(0,1)
 	if Input.is_action_just_pressed("move_r"):
-		if not longdog_direction == Vector2(-1,0):
+		if not longdog_direction == Vector2(-1,0) and not relation2(old_head_pos,new_head) == "left":
 			longdog_direction = Vector2(1,0)
 	if Input.is_action_just_pressed("move_l"):
-		if not longdog_direction == Vector2(1,0):
+		if not longdog_direction == Vector2(1,0) and not relation2(old_head_pos,new_head) == "right":
 			longdog_direction = Vector2(-1,0)
 		
 	if Input.is_key_pressed(KEY_ESCAPE) && timer.is_paused() == false:
