@@ -76,9 +76,9 @@ script = ExtResource("2_11ymt")
 
 [node name="DogCatToggle" type="Control" parent="Options"]
 anchors_preset = 0
-offset_left = 669.0
+offset_left = 670.0
 offset_top = 1502.0
-offset_right = 852.0
+offset_right = 853.0
 offset_bottom = 1584.0
 
 [node name="CheckButton" type="CheckButton" parent="Options/DogCatToggle"]
