@@ -1,7 +1,3 @@
 res://Scenes/start.tscn
 res://Scenes/main.tscn
-res://Scenes/options.tscn
 res://Scenes/store.tscn
-res://Scripts/gamemanager.gd
-res://Scripts/global.gd
-res://Scripts/Options.gd
