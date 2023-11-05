@@ -34,10 +34,10 @@ func _ready():
 	elif Global.dog_or_cat == false:
 		longdog = 3
 		hotdog = 5 
-		$UIController/FishCount2.visible = true
-		$UIController/FishCount.visible = true
-		$UIController/DogCount2.visible = false
-		$UIController/DogCount.visible = false
+		$UIController/ScoreContainer/FishCount2.visible = true
+		$UIController/ScoreContainer/FishCount.visible = true
+		$UIController/ScoreContainer/DogCount2.visible = false
+		$UIController/ScoreContainer/DogCount.visible = false
 	
 	old_head_pos = longdog_body[0]
 	

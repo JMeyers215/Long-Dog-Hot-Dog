@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cvuu3eqg28sc"]
+[gd_scene load_steps=22 format=3 uid="uid://cvuu3eqg28sc"]
 
 [ext_resource type="Script" path="res://Scripts/gamemanager.gd" id="1_4y737"]
 [ext_resource type="Texture2D" uid="uid://blxpllk2dytqa" path="res://Assets/Tiles/background tileset.png" id="1_aeraw"]
@@ -101,6 +101,16 @@ sources/3 = SubResource("TileSetAtlasSource_8mxfa")
 sources/4 = SubResource("TileSetAtlasSource_vef3r")
 sources/5 = SubResource("TileSetAtlasSource_5sehq")
 
+[sub_resource type="LabelSettings" id="LabelSettings_xwsfa"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8kte7"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wlxn1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_423l3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_5rrwk"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_s8uxg"]
 font_size = 48
 shadow_color = Color(0.152941, 0.152941, 0.152941, 0.545098)
@@ -116,7 +126,7 @@ metadata/_edit_horizontal_guides_ = []
 [node name="MainMap" type="TileMap" parent="."]
 z_index = -14
 z_as_relative = false
-position = Vector2(206, 0)
+position = Vector2(217, 0)
 scale = Vector2(1.04175, 1.04756)
 tile_set = SubResource("TileSet_tjqjl")
 format = 2
@@ -182,7 +192,8 @@ scale = Vector2(1.00924, 1)
 
 [node name="ScoreContainer" type="Sprite2D" parent="UIController"]
 z_index = -1
-position = Vector2(123.055, 218)
+position = Vector2(61.4323, 362)
+scale = Vector2(2, 2)
 texture = ExtResource("4_p0rxw")
 
 [node name="Score" type="Label" parent="UIController/ScoreContainer"]
@@ -191,6 +202,7 @@ offset_top = -113.0
 offset_right = 63.0
 offset_bottom = -87.0
 text = "Score: 0"
+label_settings = SubResource("LabelSettings_xwsfa")
 
 [node name="CollectionAmount" type="Label" parent="UIController/ScoreContainer"]
 offset_left = -26.0
@@ -198,6 +210,7 @@ offset_top = -82.0
 offset_right = 49.0
 offset_bottom = -56.0
 text = "X 0 "
+label_settings = SubResource("LabelSettings_8kte7")
 
 [node name="HighScore" type="Label" parent="UIController/ScoreContainer"]
 offset_left = -67.0
@@ -205,6 +218,7 @@ offset_top = -54.0
 offset_right = 72.0
 offset_bottom = -17.0
 text = "High Score: "
+label_settings = SubResource("LabelSettings_wlxn1")
 autowrap_mode = 3
 
 [node name="TotalText" type="Label" parent="UIController/ScoreContainer"]
@@ -213,6 +227,7 @@ offset_top = 72.0
 offset_right = 63.0
 offset_bottom = 98.0
 text = "Total "
+label_settings = SubResource("LabelSettings_423l3")
 
 [node name="TotalDogs" type="Label" parent="UIController/ScoreContainer"]
 offset_left = -63.0
@@ -220,6 +235,7 @@ offset_top = 98.0
 offset_right = 12.0
 offset_bottom = 121.0
 text = "0"
+label_settings = SubResource("LabelSettings_5rrwk")
 
 [node name="FishCount2" type="Sprite2D" parent="UIController/ScoreContainer"]
 visible = false
@@ -227,7 +243,7 @@ position = Vector2(-4, 86)
 texture = ExtResource("7_vw547")
 
 [node name="DogCount2" type="Sprite2D" parent="UIController/ScoreContainer"]
-position = Vector2(-4, 85)
+position = Vector2(-3.91116, 84.5343)
 texture = ExtResource("2_uea86")
 
 [node name="FishCount" type="Sprite2D" parent="UIController/ScoreContainer"]
@@ -240,11 +256,11 @@ position = Vector2(-51, -71)
 texture = ExtResource("2_uea86")
 
 [node name="PauseScreen" type="Control" parent="UIController"]
-visible = false
 z_index = 100
 z_as_relative = false
 anchors_preset = 0
-offset_right = 1569.0
+offset_left = 44.588
+offset_right = 1613.59
 offset_bottom = 1026.0
 
 [node name="PauseText" type="Label" parent="UIController/PauseScreen"]
@@ -263,7 +279,7 @@ vertical_alignment = 1
 z_index = -1
 z_as_relative = false
 layout_mode = 0
-offset_left = -618.0
+offset_left = -2054.0
 offset_top = 290.0
 offset_right = 2641.0
 offset_bottom = 730.0
