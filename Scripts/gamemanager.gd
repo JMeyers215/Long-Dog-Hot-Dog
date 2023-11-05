@@ -27,10 +27,10 @@ func _ready():
 	if Global.dog_or_cat == true:
 		longdog = 0
 		hotdog = 2
-		$UIController/FishCount2.visible = false
-		$UIController/FishCount.visible = false
-		$UIController/DogCount2.visible = true
-		$UIController/DogCount.visible = true
+		$UIController/ScoreContainer/FishCount2.visible = false
+		$UIController/ScoreContainer/FishCount.visible = false
+		$UIController/ScoreContainer/DogCount2.visible = true
+		$UIController/ScoreContainer/DogCount.visible = true
 	elif Global.dog_or_cat == false:
 		longdog = 3
 		hotdog = 5 

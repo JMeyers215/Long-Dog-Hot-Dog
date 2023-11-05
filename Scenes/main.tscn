@@ -110,6 +110,7 @@ total_dogs = NodePath("UIController/ScoreContainer/TotalDogs")
 metadata/_edit_horizontal_guides_ = []
 
 [node name="MainMap" type="TileMap" parent="."]
+position = Vector2(206, 0)
 scale = Vector2(1.04175, 1.04756)
 tile_set = SubResource("TileSet_tjqjl")
 format = 2
@@ -161,32 +162,21 @@ autostart = true
 
 [node name="UIController" type="Control" parent="."]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 1569.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 206.0
+offset_right = 1775.0
 offset_bottom = 1026.0
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(1.00924, 1)
-
-[node name="FishCount2" type="Sprite2D" parent="UIController"]
-visible = false
-position = Vector2(125, 300)
-texture = ExtResource("7_vw547")
-
-[node name="DogCount2" type="Sprite2D" parent="UIController"]
-position = Vector2(125, 299)
-texture = ExtResource("2_uea86")
-
-[node name="FishCount" type="Sprite2D" parent="UIController"]
-visible = false
-position = Vector2(80, 144)
-texture = ExtResource("7_vw547")
-
-[node name="DogCount" type="Sprite2D" parent="UIController"]
-position = Vector2(78, 143)
-texture = ExtResource("2_uea86")
 
 [node name="ScoreContainer" type="Sprite2D" parent="UIController"]
 z_index = -1
-position = Vector2(129, 214)
+position = Vector2(123.055, 218)
 texture = ExtResource("4_p0rxw")
 
 [node name="Score" type="Label" parent="UIController/ScoreContainer"]
@@ -224,5 +214,23 @@ offset_top = 98.0
 offset_right = 12.0
 offset_bottom = 121.0
 text = "0"
+
+[node name="FishCount2" type="Sprite2D" parent="UIController/ScoreContainer"]
+visible = false
+position = Vector2(-4, 86)
+texture = ExtResource("7_vw547")
+
+[node name="DogCount2" type="Sprite2D" parent="UIController/ScoreContainer"]
+position = Vector2(-4, 85)
+texture = ExtResource("2_uea86")
+
+[node name="FishCount" type="Sprite2D" parent="UIController/ScoreContainer"]
+visible = false
+position = Vector2(-49, -70)
+texture = ExtResource("7_vw547")
+
+[node name="DogCount" type="Sprite2D" parent="UIController/ScoreContainer"]
+position = Vector2(-51, -71)
+texture = ExtResource("2_uea86")
 
 [connection signal="timeout" from="MovementTick" to="." method="_on_movement_tick_timeout"]

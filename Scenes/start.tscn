@@ -1,9 +1,15 @@
-[gd_scene load_steps=7 format=3 uid="uid://bl2fv2cnyl38c"]
+[gd_scene load_steps=9 format=3 uid="uid://bl2fv2cnyl38c"]
 
 [ext_resource type="Script" path="res://Scripts/MenuController.gd" id="1_nviu4"]
 [ext_resource type="Script" path="res://Scripts/Options.gd" id="2_11ymt"]
 [ext_resource type="Texture2D" uid="uid://cn73vrr0o610y" path="res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png" id="3_5r1eu"]
 [ext_resource type="Texture2D" uid="uid://cg7qprvxe6fiq" path="res://Assets/Sprites/Cat Fish Sprite.png" id="4_15ubo"]
+
+[sub_resource type="SystemFont" id="SystemFont_dv7b1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mfnj7"]
+font = SubResource("SystemFont_dv7b1")
+font_size = 64
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dq2tk"]
 
@@ -14,49 +20,68 @@ font_color = Color(0.796078, 0.796078, 0.796078, 1)
 
 [node name="MenuController" type="Control" parent="."]
 layout_mode = 3
-anchors_preset = 0
-offset_left = -2.0
-offset_top = -4.0
-offset_right = 1557.0
-offset_bottom = 998.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_nviu4")
 
 [node name="StartButton" type="Button" parent="MenuController"]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.425
-anchor_top = 0.386
-anchor_right = 0.568
-anchor_bottom = 0.479
-offset_left = 0.424927
-offset_top = 0.227966
-offset_right = -0.512024
-offset_bottom = 0.0419617
+offset_left = 871.0
+offset_top = 409.0
+offset_right = 1077.0
+offset_bottom = 510.0
 action_mode = 0
 text = "Start Game"
 
 [node name="OptionButton" type="Button" parent="MenuController"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.423
-anchor_top = 0.59
-anchor_right = 0.565
-anchor_bottom = 0.683
-offset_left = 3.54297
-offset_top = -0.180054
-offset_right = 4.16498
-offset_bottom = -0.366028
+offset_left = 863.0
+offset_top = 617.0
+offset_right = 1086.0
+offset_bottom = 721.0
 grow_horizontal = 2
 grow_vertical = 0
 text = "Options"
 
 [node name="StoreButton" type="Button" parent="MenuController"]
 layout_mode = 0
-offset_left = 663.0
-offset_top = 698.0
-offset_right = 885.0
-offset_bottom = 791.0
+offset_left = 863.0
+offset_top = 738.0
+offset_right = 1085.0
+offset_bottom = 831.0
 text = "Store"
+
+[node name="Label" type="Label" parent="MenuController"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 30.0
+offset_right = 1920.0
+offset_bottom = 333.0
+text = "L.D.H.D.
+
+Long Dog Hot Dog"
+label_settings = SubResource("LabelSettings_mfnj7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LinkButton" type="LinkButton" parent="MenuController"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1813.0
+offset_top = 1024.0
+offset_right = 1913.0
+offset_bottom = 1068.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Ko-Fi Link"
 
 [node name="Options" type="Control" parent="."]
 layout_direction = 1
@@ -67,8 +92,8 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 11.0
-offset_top = -1015.0
-offset_right = 1571.0
+offset_top = -1108.0
+offset_right = 1923.0
 offset_bottom = -15.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -76,22 +101,24 @@ script = ExtResource("2_11ymt")
 
 [node name="DogCatToggle" type="Control" parent="Options"]
 anchors_preset = 0
-offset_left = 670.0
-offset_top = 1502.0
-offset_right = 853.0
-offset_bottom = 1584.0
+offset_left = 870.0
+offset_top = 1624.0
+offset_right = 1053.0
+offset_bottom = 1706.0
 
 [node name="CheckButton" type="CheckButton" parent="Options/DogCatToggle"]
-layout_mode = 0
-offset_left = -2.0
-offset_top = -5.0
-offset_right = 113.0
-offset_bottom = 35.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.010929
+anchor_top = -0.0609756
+anchor_right = 0.617486
+anchor_bottom = 0.426829
 theme_override_styles/focus = SubResource("StyleBoxEmpty_dq2tk")
 text = "Dog"
 icon = ExtResource("3_5r1eu")
+metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="Options/DogCatToggle"]
+[node name="CatLabel" type="Label" parent="Options/DogCatToggle"]
 layout_mode = 0
 offset_left = 113.0
 offset_top = 3.0
@@ -99,17 +126,11 @@ offset_right = 193.0
 offset_bottom = 38.0
 text = "Cat"
 label_settings = SubResource("LabelSettings_4s3aq")
+metadata/_edit_use_anchors_ = true
 
 [node name="CatFishSprite" type="Sprite2D" parent="Options/DogCatToggle"]
 position = Vector2(161, 17)
 texture = ExtResource("4_15ubo")
-
-[node name="Control" type="Control" parent="Options/DogCatToggle"]
-anchors_preset = 0
-offset_left = -89.0
-offset_top = -118.0
-offset_right = -49.0
-offset_bottom = -78.0
 
 [connection signal="pressed" from="MenuController/StartButton" to="MenuController" method="_on_start_button_pressed"]
 [connection signal="pressed" from="MenuController/OptionButton" to="MenuController" method="_on_option_button_pressed"]
