@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699212534
+::res://::1699219105
 default_bus_layout.tres::AudioBusLayout::6931905679315609555::1699060954::0::1::::<><>::
 icon.svg::CompressedTexture2D::1901304913145794971::1699060954::1699212536::1::::<><>::
 ::res://Assets/::1699060954
@@ -25,13 +25,13 @@ long cat sprite sheet.png::CompressedTexture2D::266973096974608347::1699060954::
 long dog sprite sheet.png::CompressedTexture2D::6587929524559053920::1699060954::1699060954::1::::<><>::
 walls2 tileset.png::CompressedTexture2D::6795187746286977866::1699060954::1699060954::1::::<><>::
 walls tileset.png::CompressedTexture2D::6073980136341730032::1699060954::1699060954::1::::<><>::
-::res://Scenes/::1699212515
-main.tscn::PackedScene::184981153413853730::1699212515::0::1::::<><>::res://Scripts/gamemanager.gd<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://c04iibxwfu801::::res://Assets/Tiles/long dog sprite sheet.png<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://h382qq7a2f3d::::res://Assets/Sprites/Score Container.png<>uid://c32v0qkdq5uqk::::res://Assets/Tiles/walls2 tileset.png<>uid://d2lajetu26kt::::res://Assets/Tiles/long cat sprite sheet.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png
+::res://Scenes/::1699215458
+main.tscn::PackedScene::184981153413853730::1699215458::0::1::::<><>::res://Scripts/gamemanager.gd<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://c04iibxwfu801::::res://Assets/Tiles/long dog sprite sheet.png<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://h382qq7a2f3d::::res://Assets/Sprites/Score Container.png<>uid://c32v0qkdq5uqk::::res://Assets/Tiles/walls2 tileset.png<>uid://d2lajetu26kt::::res://Assets/Tiles/long cat sprite sheet.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png
 options.tscn::PackedScene::1413699212774315797::1699060954::0::1::::<><>::
-start.tscn::PackedScene::3214578671550167500::1699212515::0::1::::<><>::res://Scripts/MenuController.gd<>res://Scripts/Options.gd<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png
-store.tscn::PackedScene::9007599689276024801::1699060989::0::1::::<><>::
-::res://Scripts/::1699212515
-gamemanager.gd::GDScript::-1::1699212515::0::1::::<>Node2D<>::
+start.tscn::PackedScene::3214578671550167500::1699215457::0::1::::<><>::res://Scripts/MenuController.gd<>res://Scripts/Options.gd<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png
+store.tscn::PackedScene::9007599689276024801::1699215458::0::1::::<><>::
+::res://Scripts/::1699213903
+gamemanager.gd::GDScript::-1::1699213903::0::1::::<>Node2D<>::
 global.gd::GDScript::-1::1699060954::0::1::::<>Node<>::
 MenuController.gd::GDScript::-1::1699060954::0::1::::<>Control<>::
 Options.gd::GDScript::-1::1699060954::0::1::::<>Control<>::
