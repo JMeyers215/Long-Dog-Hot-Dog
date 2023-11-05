@@ -1,4 +1,4 @@
 res://Scenes/main.tscn
+res://Scripts/gamemanager.gd
 res://Scenes/start.tscn
 res://Scenes/store.tscn
-res://Scripts/gamemanager.gd

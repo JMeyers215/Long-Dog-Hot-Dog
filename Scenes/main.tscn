@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cvuu3eqg28sc"]
+[gd_scene load_steps=17 format=3 uid="uid://cvuu3eqg28sc"]
 
 [ext_resource type="Script" path="res://Scripts/gamemanager.gd" id="1_4y737"]
 [ext_resource type="Texture2D" uid="uid://blxpllk2dytqa" path="res://Assets/Tiles/background tileset.png" id="1_aeraw"]
@@ -101,6 +101,10 @@ sources/3 = SubResource("TileSetAtlasSource_8mxfa")
 sources/4 = SubResource("TileSetAtlasSource_vef3r")
 sources/5 = SubResource("TileSetAtlasSource_5sehq")
 
+[sub_resource type="LabelSettings" id="LabelSettings_s8uxg"]
+font_size = 48
+shadow_color = Color(0.152941, 0.152941, 0.152941, 0.545098)
+
 [node name="Main" type="Node2D" node_paths=PackedStringArray("score", "coll_amt", "high_score", "total_dogs")]
 script = ExtResource("1_4y737")
 score = NodePath("UIController/ScoreContainer/Score")
@@ -110,6 +114,8 @@ total_dogs = NodePath("UIController/ScoreContainer/TotalDogs")
 metadata/_edit_horizontal_guides_ = []
 
 [node name="MainMap" type="TileMap" parent="."]
+z_index = -14
+z_as_relative = false
 position = Vector2(206, 0)
 scale = Vector2(1.04175, 1.04756)
 tile_set = SubResource("TileSet_tjqjl")
@@ -232,5 +238,34 @@ texture = ExtResource("7_vw547")
 [node name="DogCount" type="Sprite2D" parent="UIController/ScoreContainer"]
 position = Vector2(-51, -71)
 texture = ExtResource("2_uea86")
+
+[node name="PauseScreen" type="Control" parent="UIController"]
+visible = false
+z_index = 100
+z_as_relative = false
+anchors_preset = 0
+offset_right = 1569.0
+offset_bottom = 1026.0
+
+[node name="PauseText" type="Label" parent="UIController/PauseScreen"]
+layout_mode = 0
+offset_top = 316.0
+offset_right = 1569.0
+offset_bottom = 662.0
+text = "Paused
+
+Press 'Esc' to continue"
+label_settings = SubResource("LabelSettings_s8uxg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PausePanel" type="Panel" parent="UIController/PauseScreen"]
+z_index = -1
+z_as_relative = false
+layout_mode = 0
+offset_left = -618.0
+offset_top = 290.0
+offset_right = 2641.0
+offset_bottom = 730.0
 
 [connection signal="timeout" from="MovementTick" to="." method="_on_movement_tick_timeout"]

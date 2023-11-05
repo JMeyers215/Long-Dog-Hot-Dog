@@ -164,8 +164,10 @@ func _input(event):
 		
 	if Input.is_key_pressed(KEY_ESCAPE) && timer.is_paused() == false:
 		timer.set_paused(true)
+		$UIController/PauseScreen.visible = true
 	elif Input.is_key_pressed(KEY_ESCAPE) && timer.is_paused() == true:
 		timer.set_paused(false)
+		$UIController/PauseScreen.visible = false
 
 func check_hotdog():
 	if hotdog_pos == longdog_body[0]:

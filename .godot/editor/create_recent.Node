@@ -1,6 +1,7 @@
-LinkButton
+Panel
 Label
 Control
+LinkButton
 CheckButton
 GraphEdit
 AudioStreamPlayer
@@ -12,4 +13,3 @@ TileMap
 CharacterBody2D
 RigidBody2D
 RayCast2D
-StaticBody2D
