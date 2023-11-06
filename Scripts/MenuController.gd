@@ -19,6 +19,5 @@ func _on_store_button_pressed() -> void:
 
 
 func _on_quit_button_pressed() -> void:
-	Global.save_game()
 	get_tree().quit()
 

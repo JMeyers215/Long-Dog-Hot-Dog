@@ -24,14 +24,14 @@ var collection_amt : int = 0
 @export var total_dogs : Label
 
 func _ready():
-	if Global.dog_or_cat == true:
+	if Global.is_cat_or_dog == "Dog":
 		longdog = 0
 		hotdog = 2
 		$UIController/ScoreContainer/FishCount2.visible = false
 		$UIController/ScoreContainer/FishCount.visible = false
 		$UIController/ScoreContainer/DogCount2.visible = true
 		$UIController/ScoreContainer/DogCount.visible = true
-	elif Global.dog_or_cat == false:
+	elif Global.is_cat_or_dog == "Cat":
 		longdog = 3
 		hotdog = 5 
 		$UIController/ScoreContainer/FishCount2.visible = true
@@ -162,10 +162,10 @@ func _input(event):
 		if not longdog_direction == Vector2(1,0) and not relation2(old_head_pos,new_head) == "right":
 			longdog_direction = Vector2(-1,0)
 		
-	if Input.is_key_pressed(KEY_ESCAPE) && timer.is_paused() == false:
+	if Input.is_action_just_pressed("pause") && timer.is_paused() == false:
 		timer.set_paused(true)
 		$UIController/PauseScreen.visible = true
-	elif Input.is_key_pressed(KEY_ESCAPE) && timer.is_paused() == true:
+	elif Input.is_action_just_pressed("pause") && timer.is_paused() == true:
 		timer.set_paused(false)
 		$UIController/PauseScreen.visible = false
 

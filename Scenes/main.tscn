@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://cvuu3eqg28sc"]
+[gd_scene load_steps=23 format=3 uid="uid://cvuu3eqg28sc"]
 
 [ext_resource type="Script" path="res://Scripts/gamemanager.gd" id="1_4y737"]
 [ext_resource type="Texture2D" uid="uid://blxpllk2dytqa" path="res://Assets/Tiles/background tileset.png" id="1_aeraw"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://c32v0qkdq5uqk" path="res://Assets/Tiles/walls2 tileset.png" id="5_3vje8"]
 [ext_resource type="Texture2D" uid="uid://d2lajetu26kt" path="res://Assets/Tiles/long cat sprite sheet.png" id="6_chsrg"]
 [ext_resource type="Texture2D" uid="uid://cg7qprvxe6fiq" path="res://Assets/Sprites/Cat Fish Sprite.png" id="7_vw547"]
+[ext_resource type="Script" path="res://Scripts/PauseScreen.gd" id="9_iwrwt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ywide"]
 resource_name = "LongDog"
@@ -263,6 +264,7 @@ anchors_preset = 0
 offset_left = 44.588
 offset_right = 1613.59
 offset_bottom = 1026.0
+script = ExtResource("9_iwrwt")
 
 [node name="PauseText" type="Label" parent="UIController/PauseScreen"]
 layout_mode = 0
@@ -285,4 +287,22 @@ offset_top = 290.0
 offset_right = 2641.0
 offset_bottom = 730.0
 
+[node name="TitleButton" type="Button" parent="UIController/PauseScreen"]
+layout_mode = 0
+offset_left = 577.662
+offset_top = 617.0
+offset_right = 764.662
+offset_bottom = 685.0
+text = "Return to Title"
+
+[node name="QuitButton" type="Button" parent="UIController/PauseScreen"]
+layout_mode = 0
+offset_left = 800.602
+offset_top = 617.0
+offset_right = 987.602
+offset_bottom = 685.0
+text = "Quit Game"
+
 [connection signal="timeout" from="MovementTick" to="." method="_on_movement_tick_timeout"]
+[connection signal="pressed" from="UIController/PauseScreen/TitleButton" to="UIController/PauseScreen" method="_on_title_button_pressed"]
+[connection signal="pressed" from="UIController/PauseScreen/QuitButton" to="UIController/PauseScreen" method="_on_quit_button_pressed"]
