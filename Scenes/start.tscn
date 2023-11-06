@@ -47,7 +47,7 @@ tile_size = Vector2i(32, 32)
 sources/1 = SubResource("TileSetAtlasSource_epb0k")
 
 [node name="Start" type="Node2D"]
-position = Vector2(19, 0)
+position = Vector2(60, 4)
 
 [node name="MenuController" type="Control" parent="."]
 layout_mode = 3
@@ -59,47 +59,65 @@ offset_right = 6.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_nviu4")
+metadata/_edit_use_anchors_ = true
 
 [node name="Buttons" type="Control" parent="MenuController"]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
 
 [node name="StartButton" type="Button" parent="MenuController/Buttons"]
 layout_mode = 1
-offset_left = 871.0
+offset_left = 865.0
 offset_top = 409.0
-offset_right = 1077.0
+offset_right = 1071.0
 offset_bottom = 510.0
 action_mode = 0
 text = "Start Game"
+metadata/_edit_use_anchors_ = true
 
 [node name="OptionButton" type="Button" parent="MenuController/Buttons"]
 layout_mode = 1
 anchors_preset = -1
-offset_left = 871.0
+offset_left = 865.0
 offset_top = 529.0
-offset_right = 1077.0
+offset_right = 1071.0
 offset_bottom = 630.0
 grow_horizontal = 2
 grow_vertical = 0
 text = "Options"
+metadata/_edit_use_anchors_ = true
 
 [node name="StoreButton" type="Button" parent="MenuController/Buttons"]
 layout_mode = 0
-offset_left = 872.0
+offset_left = 866.0
 offset_top = 650.0
-offset_right = 1078.0
+offset_right = 1072.0
 offset_bottom = 751.0
 text = "Store"
+metadata/_edit_use_anchors_ = true
+
+[node name="QuitButton" type="Button" parent="MenuController/Buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 3.05
+anchor_bottom = 3.05
+offset_left = 866.0
+offset_top = 650.0
+offset_right = 1072.0
+offset_bottom = 751.0
+text = "Quit"
+metadata/_edit_use_anchors_ = true
 
 [node name="Kofi" type="LinkButton" parent="MenuController/Buttons"]
 layout_mode = 1
-offset_left = 1810.0
+offset_left = 1804.0
 offset_top = 1022.0
-offset_right = 1910.0
+offset_right = 1904.0
 offset_bottom = 1066.0
 text = "Ko-Fi Link"
+metadata/_edit_use_anchors_ = true
 
 [node name="Options" type="Control" parent="MenuController"]
 visible = false
@@ -250,6 +268,7 @@ Long Dog Hot Dog"
 label_settings = SubResource("LabelSettings_mfnj7")
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -1000
@@ -261,5 +280,7 @@ layer_0/tile_data = PackedInt32Array(65535, 196609, 0, 131071, 196609, 0, 196607
 [connection signal="pressed" from="MenuController/Buttons/StartButton" to="MenuController" method="_on_start_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/OptionButton" to="MenuController" method="_on_option_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/StoreButton" to="MenuController" method="_on_store_button_pressed"]
+[connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_store_button_pressed"]
+[connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_quit_button_pressed"]
 [connection signal="toggled" from="MenuController/Options/OptionsPanel/DogCatToggle/CheckButton" to="MenuController/Options" method="_on_check_button_toggled"]
 [connection signal="pressed" from="MenuController/Options/OptionsPanel/BackButton" to="MenuController" method="_on_back_button_pressed"]

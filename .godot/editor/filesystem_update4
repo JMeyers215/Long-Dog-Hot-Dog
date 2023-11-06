@@ -1,5 +1,5 @@
-res://Scripts/Options.gd
 res://Scenes/start.tscn
-res://Scripts/MenuController.gd
 res://Scenes/main.tscn
 res://Scenes/store.tscn
+res://Scripts/MenuController.gd
+res://Scripts/global.gd
