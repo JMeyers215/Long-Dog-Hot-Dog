@@ -257,6 +257,7 @@ position = Vector2(-51, -71)
 texture = ExtResource("2_uea86")
 
 [node name="PauseScreen" type="Control" parent="UIController"]
+visible = false
 z_index = 100
 z_as_relative = false
 anchors_preset = 0

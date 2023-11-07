@@ -303,7 +303,7 @@ theme = SubResource("Theme_ldv3h")
 [connection signal="pressed" from="MenuController/Buttons/StartButton" to="MenuController" method="_on_start_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/OptionButton" to="MenuController" method="_on_option_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/StoreButton" to="MenuController" method="_on_store_button_pressed"]
-[connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_store_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_quit_button_pressed"]
+[connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_store_button_pressed"]
 [connection signal="item_selected" from="MenuController/Options/OptionsPanel/DogCatToggle/OptionButton" to="MenuController/Options" method="_on_option_button_item_selected"]
 [connection signal="pressed" from="MenuController/Options/OptionsPanel/BackButton" to="MenuController" method="_on_back_button_pressed"]

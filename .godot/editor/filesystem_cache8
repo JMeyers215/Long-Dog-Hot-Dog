@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699341159
+::res://::1699389724
 default_bus_layout.tres::AudioBusLayout::6931905679315609555::1699020653::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1699340960::0::1::::<><>::
-::res://Assets/::1699341158
+::res://Assets/::1699341159
 icon.svg::CompressedTexture2D::1901304913145794971::1698210045::1699341159::1::::<><>::
 Ko-Fi Logo.png::CompressedTexture2D::8727417539674760424::1699296336::1699341159::1::::<><>::
 tik-tok-logo-33082.png::CompressedTexture2D::1489078614609988970::1699300482::1699341159::1::::<><>::
@@ -29,11 +29,11 @@ long cat sprite sheet.png::CompressedTexture2D::266973096974608347::1698815532::
 long dog sprite sheet.png::CompressedTexture2D::6587929524559053920::1698815517::1698815615::1::::<><>::
 walls2 tileset.png::CompressedTexture2D::6795187746286977866::1698774334::1698774335::1::::<><>::
 walls tileset.png::CompressedTexture2D::6073980136341730032::1698344288::1698345284::1::::<><>::
-::res://Scenes/::1699341158
-main.tscn::PackedScene::184981153413853730::1699340929::0::1::::<><>::res://Scripts/gamemanager.gd<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://c04iibxwfu801::::res://Assets/Tiles/long dog sprite sheet.png<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://h382qq7a2f3d::::res://Assets/Sprites/Score Container.png<>uid://c32v0qkdq5uqk::::res://Assets/Tiles/walls2 tileset.png<>uid://d2lajetu26kt::::res://Assets/Tiles/long cat sprite sheet.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>res://Scripts/PauseScreen.gd
+::res://Scenes/::1699341250
+main.tscn::PackedScene::184981153413853730::1699341250::0::1::::<><>::res://Scripts/gamemanager.gd<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://c04iibxwfu801::::res://Assets/Tiles/long dog sprite sheet.png<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://h382qq7a2f3d::::res://Assets/Sprites/Score Container.png<>uid://c32v0qkdq5uqk::::res://Assets/Tiles/walls2 tileset.png<>uid://d2lajetu26kt::::res://Assets/Tiles/long cat sprite sheet.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>res://Scripts/PauseScreen.gd
 options.tscn::PackedScene::1413699212774315797::1699034513::0::1::::<><>::
-start.tscn::PackedScene::3214578671550167500::1699341158::0::1::::<><>::res://Scripts/MenuController.gd<>res://Scripts/Options.gd<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://vhk530uec203::::res://Assets/tik-tok-logo-33082.png<>uid://2dahjsm3dnxb::::res://Assets/icon.svg<>uid://dwlvj6kngg43m::::res://Assets/Ko-Fi Logo.png
-store.tscn::PackedScene::9007599689276024801::1699340930::0::1::::<><>::
+start.tscn::PackedScene::3214578671550167500::1699341243::0::1::::<><>::res://Scripts/MenuController.gd<>res://Scripts/Options.gd<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://vhk530uec203::::res://Assets/tik-tok-logo-33082.png<>uid://2dahjsm3dnxb::::res://Assets/icon.svg<>uid://dwlvj6kngg43m::::res://Assets/Ko-Fi Logo.png
+store.tscn::PackedScene::9007599689276024801::1699341243::0::1::::<><>::
 ::res://Scripts/::1699340926
 gamemanager.gd::GDScript::-1::1699340709::0::1::::<>Node2D<>::
 global.gd::GDScript::-1::1699340926::0::1::::<>Node<>::
