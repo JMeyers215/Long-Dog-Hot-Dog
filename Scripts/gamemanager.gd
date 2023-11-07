@@ -9,8 +9,8 @@ var add_hotdog : bool = false
 
 var timer : Timer
 #change to 0, and 2 for Dog// 3, and 5 for Cat
-var longdog : int = 3
-var hotdog : int = 5
+var longdog : int = 0
+var hotdog : int = 2
 
 var hotdog_pos : Vector2
 
@@ -24,6 +24,8 @@ var collection_amt : int = 0
 @export var total_dogs : Label
 
 func _ready():
+	$UIController/PauseScreen.visible = false
+	
 	if Global.dog_or_cat == "Dog":
 		longdog = 0
 		hotdog = 2

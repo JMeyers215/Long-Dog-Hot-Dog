@@ -13,7 +13,7 @@ config_version=5
 config/name="Long Dog Hot Dog"
 run/main_scene="res://Scenes/start.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png"
 
 [autoload]
 

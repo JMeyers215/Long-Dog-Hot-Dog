@@ -13,11 +13,11 @@ func _on_back_button_pressed():
 	$Buttons.visible = true
 	$Title.visible = true
 
-
 func _on_store_button_pressed() -> void:
 	pass # Replace with function body.
 
 
 func _on_quit_button_pressed() -> void:
+	Global.save_game()
 	get_tree().quit()
 

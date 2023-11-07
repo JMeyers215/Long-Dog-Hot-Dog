@@ -4,3 +4,5 @@ res://Scenes/store.tscn
 res://Scripts/global.gd
 res://Scripts/Options.gd
 res://Scripts/gamemanager.gd
+res://Scripts/PauseScreen.gd
+res://Scripts/MenuController.gd

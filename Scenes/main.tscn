@@ -268,11 +268,10 @@ script = ExtResource("9_iwrwt")
 
 [node name="PauseText" type="Label" parent="UIController/PauseScreen"]
 layout_mode = 0
-offset_top = 316.0
+offset_top = 290.0
 offset_right = 1569.0
-offset_bottom = 662.0
+offset_bottom = 636.0
 text = "Paused
-
 Press 'Esc' to continue"
 label_settings = SubResource("LabelSettings_s8uxg")
 horizontal_alignment = 1

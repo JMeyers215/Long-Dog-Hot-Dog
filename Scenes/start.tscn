@@ -101,7 +101,7 @@ offset_right = 1066.0
 offset_bottom = 751.0
 text = "Quit"
 
-[node name="Options" type="Control" parent="MenuController" groups=["Persist"]]
+[node name="Options" type="Control" parent="MenuController" node_paths=PackedStringArray("CharacterOptions") groups=["Persist"]]
 visible = false
 layout_direction = 1
 layout_mode = 1
@@ -110,6 +110,7 @@ offset_left = -18.0
 offset_right = 1894.0
 offset_bottom = 1093.0
 script = ExtResource("2_11ymt")
+CharacterOptions = NodePath("OptionsPanel/DogCatToggle/OptionButton")
 
 [node name="OptionsPanel" type="Panel" parent="MenuController/Options"]
 z_index = -10
