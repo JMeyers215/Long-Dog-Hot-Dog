@@ -1,7 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699242806
+::res://::1699300482
 default_bus_layout.tres::AudioBusLayout::6931905679315609555::1699020653::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1699249676::0::1::::<><>::
 icon.svg::CompressedTexture2D::1901304913145794971::1698210045::1699242807::1::::<><>::
+Ko-Fi Logo.png::CompressedTexture2D::8727417539674760424::1699296336::1699296337::1::::<><>::
+tik-tok-logo-33082.png::CompressedTexture2D::1489078614609988970::1699300482::1699300485::1::::<><>::
+twitter logo.jpg::CompressedTexture2D::7504764919364117198::1699300281::1699300485::1::::<><>::
 ::res://Assets/::1698257353
 ::res://Assets/Sprites/::1698816727
 Cat Fish Sprite.png::CompressedTexture2D::5261033702526575884::1698816724::1698816727::1::::<><>::
@@ -25,16 +29,17 @@ long cat sprite sheet.png::CompressedTexture2D::266973096974608347::1698815532::
 long dog sprite sheet.png::CompressedTexture2D::6587929524559053920::1698815517::1698815615::1::::<><>::
 walls2 tileset.png::CompressedTexture2D::6795187746286977866::1698774334::1698774335::1::::<><>::
 walls tileset.png::CompressedTexture2D::6073980136341730032::1698344288::1698345284::1::::<><>::
-::res://Scenes/::1699242792
-main.tscn::PackedScene::184981153413853730::1699242792::0::1::::<><>::res://Scripts/gamemanager.gd<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://c04iibxwfu801::::res://Assets/Tiles/long dog sprite sheet.png<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://h382qq7a2f3d::::res://Assets/Sprites/Score Container.png<>uid://c32v0qkdq5uqk::::res://Assets/Tiles/walls2 tileset.png<>uid://d2lajetu26kt::::res://Assets/Tiles/long cat sprite sheet.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png
+::res://Scenes/::1699296291
+main.tscn::PackedScene::184981153413853730::1699296291::0::1::::<><>::res://Scripts/gamemanager.gd<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://c04iibxwfu801::::res://Assets/Tiles/long dog sprite sheet.png<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://h382qq7a2f3d::::res://Assets/Sprites/Score Container.png<>uid://c32v0qkdq5uqk::::res://Assets/Tiles/walls2 tileset.png<>uid://d2lajetu26kt::::res://Assets/Tiles/long cat sprite sheet.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>res://Scripts/PauseScreen.gd
 options.tscn::PackedScene::1413699212774315797::1699034513::0::1::::<><>::
-start.tscn::PackedScene::3214578671550167500::1699242792::0::1::::<><>::res://Scripts/MenuController.gd<>res://Scripts/Options.gd<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png
-store.tscn::PackedScene::9007599689276024801::1699161041::0::1::::<><>::
-::res://Scripts/::1699242792
-gamemanager.gd::GDScript::-1::1699242792::0::1::::<>Node2D<>::
-global.gd::GDScript::-1::1699045958::0::1::::<>Node<>::
-MenuController.gd::GDScript::-1::1699242792::0::1::::<>Control<>::
-Options.gd::GDScript::-1::1699242792::0::1::::<>Control<>::
+start.tscn::PackedScene::3214578671550167500::1699296291::0::1::::<><>::res://Scripts/MenuController.gd<>res://Scripts/Options.gd<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://2dahjsm3dnxb::::res://icon.svg
+store.tscn::PackedScene::9007599689276024801::1699296291::0::1::::<><>::
+::res://Scripts/::1699251903
+gamemanager.gd::GDScript::-1::1699249712::0::1::::<>Node2D<>::
+global.gd::GDScript::-1::1699249986::0::1::::<>Node<>::
+MenuController.gd::GDScript::-1::1699249894::0::1::::<>Control<>::
+Options.gd::GDScript::-1::1699244844::0::1::::<>Control<>::
+PauseScreen.gd::GDScript::-1::1699251903::0::1::::<>Control<>::
 ::res://shader_cache/::1699053692
 ::res://shader_cache/BlitShaderRD/::1699053692
 ::res://shader_cache/BlitShaderRD/8bb8c904372e3085c2a81cc74364fc612b8cefcfb78cbe8b0ee6dcb4613b7602/::1698210047
