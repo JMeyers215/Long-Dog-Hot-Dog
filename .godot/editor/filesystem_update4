@@ -1,1 +1,6 @@
+res://Scenes/start.tscn
+res://Scenes/main.tscn
+res://Scenes/store.tscn
 res://Scripts/global.gd
+res://Scripts/Options.gd
+res://Scripts/gamemanager.gd

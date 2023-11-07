@@ -7,7 +7,7 @@ var total_count : int = 0
 var high_score : int = 0
 
 #options variables
-var dog_or_cat : bool 
+var dog_or_cat : String = "Dog"
 var music_option : int = 1
 var sound_option : int = 1
 
@@ -31,7 +31,7 @@ func save_game():
 		global = {
 			total_count = int(total_count),
 			high_score = int(high_score),
-			dog_or_cat = bool(dog_or_cat),
+			dog_or_cat = str_to_var(dog_or_cat),
 			music_option = int(music_option),
 			sound_option = int(sound_option)
 		}

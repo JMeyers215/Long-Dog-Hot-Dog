@@ -24,14 +24,14 @@ var collection_amt : int = 0
 @export var total_dogs : Label
 
 func _ready():
-	if Global.is_cat_or_dog == "Dog":
+	if Global.dog_or_cat == "Dog":
 		longdog = 0
 		hotdog = 2
 		$UIController/ScoreContainer/FishCount2.visible = false
 		$UIController/ScoreContainer/FishCount.visible = false
 		$UIController/ScoreContainer/DogCount2.visible = true
 		$UIController/ScoreContainer/DogCount.visible = true
-	elif Global.is_cat_or_dog == "Cat":
+	elif Global.dog_or_cat == "Cat":
 		longdog = 3
 		hotdog = 5 
 		$UIController/ScoreContainer/FishCount2.visible = true
