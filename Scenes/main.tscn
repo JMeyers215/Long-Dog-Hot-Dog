@@ -257,13 +257,13 @@ position = Vector2(-51, -71)
 texture = ExtResource("2_uea86")
 
 [node name="PauseScreen" type="Control" parent="UIController"]
-visible = false
 z_index = 100
 z_as_relative = false
 anchors_preset = 0
-offset_left = 44.588
-offset_right = 1613.59
-offset_bottom = 1026.0
+offset_left = 10.8993
+offset_top = -45.0
+offset_right = 1579.9
+offset_bottom = 981.0
 script = ExtResource("9_iwrwt")
 
 [node name="PauseText" type="Label" parent="UIController/PauseScreen"]
