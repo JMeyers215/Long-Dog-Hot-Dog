@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de6mm8k1mu3uw"
-path="res://.godot/imported/twitter logo.jpg-eeef63a2f57c99205c7545a81592b7eb.ctex"
+uid="uid://dwlvj6kngg43m"
+path="res://.godot/imported/Ko-Fi Logo.png-244e6b87a1c577527731edc8985eb52c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://twitter logo.jpg"
-dest_files=["res://.godot/imported/twitter logo.jpg-eeef63a2f57c99205c7545a81592b7eb.ctex"]
+source_file="res://Assets/Ko-Fi Logo.png"
+dest_files=["res://.godot/imported/Ko-Fi Logo.png-244e6b87a1c577527731edc8985eb52c.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vhk530uec203"
-path="res://.godot/imported/tik-tok-logo-33082.png-21555e5593762eb4a4338dd6e6f48972.ctex"
+path="res://.godot/imported/tik-tok-logo-33082.png-9a5cdad3eb36a0ed85eddb9c67dfd370.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tik-tok-logo-33082.png"
-dest_files=["res://.godot/imported/tik-tok-logo-33082.png-21555e5593762eb4a4338dd6e6f48972.ctex"]
+source_file="res://Assets/tik-tok-logo-33082.png"
+dest_files=["res://.godot/imported/tik-tok-logo-33082.png-9a5cdad3eb36a0ed85eddb9c67dfd370.ctex"]
 
 [params]
 
