@@ -1,13 +1,20 @@
-[gd_scene load_steps=18 format=3 uid="uid://bl2fv2cnyl38c"]
+[gd_scene load_steps=19 format=3 uid="uid://bl2fv2cnyl38c"]
 
 [ext_resource type="Script" path="res://Scripts/MenuController.gd" id="1_nviu4"]
 [ext_resource type="Script" path="res://Scripts/Options.gd" id="2_11ymt"]
 [ext_resource type="Texture2D" uid="uid://cn73vrr0o610y" path="res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png" id="3_5r1eu"]
 [ext_resource type="Texture2D" uid="uid://cg7qprvxe6fiq" path="res://Assets/Sprites/Cat Fish Sprite.png" id="4_15ubo"]
 [ext_resource type="Texture2D" uid="uid://blxpllk2dytqa" path="res://Assets/Tiles/background tileset.png" id="5_ngera"]
+[ext_resource type="Script" path="res://Scripts/Store.gd" id="5_vvihw"]
 [ext_resource type="Texture2D" uid="uid://vhk530uec203" path="res://Assets/tik-tok-logo-33082.png" id="6_o2hsd"]
 [ext_resource type="Texture2D" uid="uid://2dahjsm3dnxb" path="res://Assets/icon.svg" id="6_v0xhb"]
 [ext_resource type="Texture2D" uid="uid://dwlvj6kngg43m" path="res://Assets/Ko-Fi Logo.png" id="8_87rlu"]
+
+[sub_resource type="SystemFont" id="SystemFont_dv7b1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mfnj7"]
+font = SubResource("SystemFont_dv7b1")
+font_size = 64
 
 [sub_resource type="LabelSettings" id="LabelSettings_ksnou"]
 font_size = 48
@@ -17,12 +24,6 @@ font_size = 32
 
 [sub_resource type="LabelSettings" id="LabelSettings_otyq4"]
 font_size = 32
-
-[sub_resource type="SystemFont" id="SystemFont_dv7b1"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_mfnj7"]
-font = SubResource("SystemFont_dv7b1")
-font_size = 64
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_epb0k"]
 texture = ExtResource("5_ngera")
@@ -56,7 +57,18 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_nviu4")
 
+[node name="Title" type="Label" parent="MenuController"]
+layout_mode = 1
+offset_right = 1918.0
+offset_bottom = 303.0
+text = "L.D.H.D.
+Long Dog Hot Dog"
+label_settings = SubResource("LabelSettings_mfnj7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Buttons" type="Control" parent="MenuController"]
+visible = false
 layout_mode = 1
 anchors_preset = 0
 offset_right = 40.0
@@ -225,15 +237,18 @@ offset_right = 295.0
 offset_bottom = 570.0
 text = "Back"
 
-[node name="Title" type="Label" parent="MenuController"]
-layout_mode = 1
-offset_right = 1918.0
-offset_bottom = 303.0
-text = "L.D.H.D.
-Long Dog Hot Dog"
-label_settings = SubResource("LabelSettings_mfnj7")
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Store" type="Control" parent="MenuController" groups=["Persist"]]
+anchors_preset = 0
+offset_right = 1915.0
+offset_bottom = 1080.0
+script = ExtResource("5_vvihw")
+
+[node name="Store Panel" type="Panel" parent="MenuController/Store"]
+layout_mode = 0
+offset_left = -806.0
+offset_top = 379.0
+offset_right = 2759.0
+offset_bottom = 764.0
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -1000
@@ -303,7 +318,7 @@ theme = SubResource("Theme_ldv3h")
 [connection signal="pressed" from="MenuController/Buttons/StartButton" to="MenuController" method="_on_start_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/OptionButton" to="MenuController" method="_on_option_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/StoreButton" to="MenuController" method="_on_store_button_pressed"]
-[connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_store_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_quit_button_pressed"]
+[connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_store_button_pressed"]
 [connection signal="item_selected" from="MenuController/Options/OptionsPanel/DogCatToggle/OptionButton" to="MenuController/Options" method="_on_option_button_item_selected"]
 [connection signal="pressed" from="MenuController/Options/OptionsPanel/BackButton" to="MenuController" method="_on_back_button_pressed"]
