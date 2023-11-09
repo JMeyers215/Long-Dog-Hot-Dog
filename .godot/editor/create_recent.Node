@@ -1,3 +1,6 @@
+AudioStreamPlayer2D
+AudioStreamPlayer
+Node
 Label
 Button
 Panel
@@ -9,6 +12,3 @@ Container
 HBoxContainer
 OptionButton
 Tree
-MenuButton
-LinkButton
-Node

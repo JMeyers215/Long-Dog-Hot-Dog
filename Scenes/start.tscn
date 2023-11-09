@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://bl2fv2cnyl38c"]
+[gd_scene load_steps=23 format=3 uid="uid://bl2fv2cnyl38c"]
 
 [ext_resource type="Script" path="res://Scripts/MenuController.gd" id="1_nviu4"]
 [ext_resource type="Script" path="res://Scripts/Options.gd" id="2_11ymt"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://2dahjsm3dnxb" path="res://Assets/icon.svg" id="6_v0xhb"]
 [ext_resource type="Texture2D" uid="uid://dwlvj6kngg43m" path="res://Assets/Ko-Fi Logo.png" id="8_87rlu"]
 [ext_resource type="Texture2D" uid="uid://br56sw7ryrucl" path="res://Assets/Sprites/Long Body Studios Logo and Name (POC).png" id="10_5r067"]
+[ext_resource type="AudioStream" uid="uid://dscvj3uw54200" path="res://Sounds/Button 5.mp3" id="11_vx2pc"]
 
 [sub_resource type="Theme" id="Theme_b8iwh"]
 default_font_size = 65
@@ -471,11 +472,14 @@ offset_right = -132.517
 offset_bottom = -96.9768
 theme = SubResource("Theme_ldv3h")
 
+[node name="ButtonNoise" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_vx2pc")
+
 [connection signal="pressed" from="MenuController/Buttons/StartButton" to="MenuController" method="_on_start_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/OptionButton" to="MenuController" method="_on_option_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/StoreButton" to="MenuController" method="_on_store_button_pressed"]
-[connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_store_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_quit_button_pressed"]
+[connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_store_button_pressed"]
 [connection signal="item_selected" from="MenuController/Options/OptionsPanel/DogCatToggle/OptionButton" to="MenuController/Options" method="_on_option_button_item_selected"]
 [connection signal="pressed" from="MenuController/Options/OptionsPanel/BackButton" to="MenuController" method="_on_back_button_pressed"]
 [connection signal="pressed" from="MenuController/Store/BackButton2" to="MenuController" method="_on_back_button_pressed"]
