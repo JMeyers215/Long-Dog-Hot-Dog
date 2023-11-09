@@ -173,6 +173,7 @@ func _input(event):
 
 func check_hotdog():
 	if hotdog_pos == longdog_body[0]:
+		$HotDogNoise.play()
 		hotdog_pos = place_hotdog()
 		delete_tiles(hotdog)
 		add_count()

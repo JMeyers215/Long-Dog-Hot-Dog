@@ -6,3 +6,4 @@ res://Scripts/music.gd
 res://Scenes/start.tscn
 res://Scenes/main.tscn
 res://Scripts/MenuController.gd
+res://Scripts/gamemanager.gd

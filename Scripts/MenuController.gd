@@ -22,7 +22,6 @@ func _on_store_button_pressed() -> void:
 	$Store.visible = true
 	$Buttons.visible = false
 	$Title.visible = false
-	pass # Replace with function body.
 
 
 func _on_quit_button_pressed() -> void:
