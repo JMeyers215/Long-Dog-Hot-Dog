@@ -6,12 +6,12 @@ func _on_start_button_pressed() -> void:
 func _on_option_button_pressed() -> void:
 	$Options.visible = true
 	$Buttons.visible = false
-	$Title.visible = false
+	$"../Title".visible = false
 
 func _on_back_button_pressed():
 	$Options.visible = false
 	$Buttons.visible = true
-	$Title.visible = true
+	$"../Title".visible = true
 
 func _on_store_button_pressed() -> void:
 	pass # Replace with function body.

@@ -1,2 +1,3 @@
 res://Scenes/start.tscn
 res://Scenes/main.tscn
+res://Scripts/MenuController.gd
