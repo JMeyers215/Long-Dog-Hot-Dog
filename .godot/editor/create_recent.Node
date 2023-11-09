@@ -1,11 +1,11 @@
-Button
 Label
+Button
+Panel
+Control
 Sprite2D
 PanelContainer
 AspectRatioContainer
 Container
-Control
-Panel
 HBoxContainer
 OptionButton
 Tree

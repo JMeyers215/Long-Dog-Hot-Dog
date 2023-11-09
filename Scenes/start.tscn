@@ -64,6 +64,11 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_nviu4")
 
+[node name="Title" type="Sprite2D" parent="MenuController"]
+position = Vector2(933, 169)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("10_5r067")
+
 [node name="Buttons" type="Control" parent="MenuController"]
 layout_mode = 1
 anchors_preset = 0
@@ -245,12 +250,161 @@ offset_right = 1915.0
 offset_bottom = 1080.0
 script = ExtResource("5_vvihw")
 
-[node name="Store Panel" type="Panel" parent="MenuController/Store"]
+[node name="BackButton2" type="Button" parent="MenuController/Store"]
+z_index = 5
+layout_mode = 0
+offset_left = 868.0
+offset_top = 781.0
+offset_right = 1058.0
+offset_bottom = 853.0
+text = "Back"
+
+[node name="StorePanel" type="Panel" parent="MenuController/Store"]
 layout_mode = 0
 offset_left = -806.0
 offset_top = 379.0
 offset_right = 2759.0
 offset_bottom = 764.0
+
+[node name="StoreItem" type="Control" parent="MenuController/Store/StorePanel"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ItemPanel" type="Panel" parent="MenuController/Store/StorePanel/StoreItem"]
+layout_mode = 0
+offset_left = 1457.0
+offset_top = 14.0
+offset_right = 1644.0
+offset_bottom = 374.0
+
+[node name="PlaceholderItemArt" type="Sprite2D" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel"]
+position = Vector2(92, 95)
+scale = Vector2(5, 5)
+texture = ExtResource("4_15ubo")
+
+[node name="ItemButton" type="Button" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel"]
+editor_description = "Try to use one button, changing the text and functionality based on booleans/options saved in Global."
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -46.5
+offset_top = -86.0
+offset_right = 46.5
+offset_bottom = -29.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Buy"
+
+[node name="Cost" type="Label" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -39.5
+offset_top = -28.0
+offset_right = 39.5
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Cost: 50"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemPanel2" type="Panel" parent="MenuController/Store/StorePanel/StoreItem"]
+layout_mode = 0
+offset_left = 1673.0
+offset_top = 14.0
+offset_right = 1860.0
+offset_bottom = 374.0
+
+[node name="PlaceholderItemArt" type="Sprite2D" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel2"]
+position = Vector2(92, 95)
+scale = Vector2(5, 5)
+texture = ExtResource("4_15ubo")
+
+[node name="ItemButton" type="Button" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel2"]
+editor_description = "Try to use one button, changing the text and functionality based on booleans/options saved in Global."
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -46.5
+offset_top = -86.0
+offset_right = 46.5
+offset_bottom = -29.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Buy"
+
+[node name="Cost" type="Label" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel2"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -39.5
+offset_top = -28.0
+offset_right = 39.5
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Cost: 50"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemPanel3" type="Panel" parent="MenuController/Store/StorePanel/StoreItem"]
+layout_mode = 0
+offset_left = 1886.0
+offset_top = 14.0
+offset_right = 2073.0
+offset_bottom = 374.0
+
+[node name="PlaceholderItemArt" type="Sprite2D" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel3"]
+position = Vector2(92, 95)
+scale = Vector2(5, 5)
+texture = ExtResource("4_15ubo")
+
+[node name="ItemButton" type="Button" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel3"]
+editor_description = "Try to use one button, changing the text and functionality based on booleans/options saved in Global."
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -46.5
+offset_top = -86.0
+offset_right = 46.5
+offset_bottom = -29.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Buy"
+
+[node name="Cost" type="Label" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel3"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -39.5
+offset_top = -28.0
+offset_right = 39.5
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Cost: 50"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -1000
@@ -317,11 +471,6 @@ offset_right = -132.517
 offset_bottom = -96.9768
 theme = SubResource("Theme_ldv3h")
 
-[node name="Title" type="Sprite2D" parent="."]
-position = Vector2(933, 169)
-scale = Vector2(1.25, 1.25)
-texture = ExtResource("10_5r067")
-
 [connection signal="pressed" from="MenuController/Buttons/StartButton" to="MenuController" method="_on_start_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/OptionButton" to="MenuController" method="_on_option_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/StoreButton" to="MenuController" method="_on_store_button_pressed"]
@@ -329,3 +478,4 @@ texture = ExtResource("10_5r067")
 [connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_quit_button_pressed"]
 [connection signal="item_selected" from="MenuController/Options/OptionsPanel/DogCatToggle/OptionButton" to="MenuController/Options" method="_on_option_button_item_selected"]
 [connection signal="pressed" from="MenuController/Options/OptionsPanel/BackButton" to="MenuController" method="_on_back_button_pressed"]
+[connection signal="pressed" from="MenuController/Store/BackButton2" to="MenuController" method="_on_back_button_pressed"]
