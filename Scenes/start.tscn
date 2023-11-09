@@ -65,7 +65,7 @@ anchors_preset = 0
 script = ExtResource("1_nviu4")
 
 [node name="Title" type="Sprite2D" parent="MenuController"]
-position = Vector2(933, 169)
+position = Vector2(933, 170)
 scale = Vector2(1.25, 1.25)
 texture = ExtResource("10_5r067")
 
