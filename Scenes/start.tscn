@@ -78,9 +78,9 @@ offset_bottom = 74.0
 
 [node name="StartButton" type="Button" parent="MenuController/Buttons"]
 layout_mode = 1
-offset_left = 471.0
+offset_left = 469.0
 offset_top = 251.0
-offset_right = 792.0
+offset_right = 790.0
 offset_bottom = 345.0
 theme = SubResource("Theme_b8iwh")
 action_mode = 0
@@ -100,9 +100,9 @@ text = "Options"
 
 [node name="StoreButton" type="Button" parent="MenuController/Buttons"]
 layout_mode = 0
-offset_left = 472.0
+offset_left = 470.0
 offset_top = 458.0
-offset_right = 793.0
+offset_right = 791.0
 offset_bottom = 552.0
 theme = SubResource("Theme_6q3yi")
 text = "Store"
@@ -480,8 +480,8 @@ stream = ExtResource("11_vx2pc")
 [connection signal="pressed" from="MenuController/Buttons/StartButton" to="MenuController" method="_on_start_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/OptionButton" to="MenuController" method="_on_option_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/StoreButton" to="MenuController" method="_on_store_button_pressed"]
-[connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_quit_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_store_button_pressed"]
+[connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_quit_button_pressed"]
 [connection signal="item_selected" from="MenuController/Options/OptionsPanel/DogCatToggle/OptionButton" to="MenuController/Options" method="_on_option_button_item_selected"]
 [connection signal="pressed" from="MenuController/Options/OptionsPanel/BackButton" to="MenuController" method="_on_back_button_pressed"]
 [connection signal="pressed" from="MenuController/Store/BackButton2" to="MenuController" method="_on_back_button_pressed"]
