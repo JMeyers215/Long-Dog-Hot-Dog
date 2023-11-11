@@ -13,16 +13,16 @@
 [ext_resource type="AudioStream" uid="uid://dscvj3uw54200" path="res://Sounds/Button 5.mp3" id="11_vx2pc"]
 
 [sub_resource type="Theme" id="Theme_b8iwh"]
-default_font_size = 65
+default_font_size = 45
 
 [sub_resource type="Theme" id="Theme_pw7lg"]
-default_font_size = 65
+default_font_size = 45
 
 [sub_resource type="Theme" id="Theme_6q3yi"]
-default_font_size = 65
+default_font_size = 45
 
 [sub_resource type="Theme" id="Theme_6e5bf"]
-default_font_size = 65
+default_font_size = 45
 
 [sub_resource type="LabelSettings" id="LabelSettings_ksnou"]
 font_size = 48
@@ -66,8 +66,7 @@ anchors_preset = 0
 script = ExtResource("1_nviu4")
 
 [node name="Title" type="Sprite2D" parent="MenuController"]
-position = Vector2(933, 170)
-scale = Vector2(1.25, 1.25)
+position = Vector2(609, 131)
 texture = ExtResource("10_5r067")
 
 [node name="Buttons" type="Control" parent="MenuController"]
@@ -79,10 +78,10 @@ offset_bottom = 74.0
 
 [node name="StartButton" type="Button" parent="MenuController/Buttons"]
 layout_mode = 1
-offset_left = 722.0
-offset_top = 346.0
-offset_right = 1200.0
-offset_bottom = 487.0
+offset_left = 471.0
+offset_top = 251.0
+offset_right = 792.0
+offset_bottom = 345.0
 theme = SubResource("Theme_b8iwh")
 action_mode = 0
 text = "Start Game"
@@ -90,10 +89,10 @@ text = "Start Game"
 [node name="OptionButton" type="Button" parent="MenuController/Buttons"]
 layout_mode = 1
 anchors_preset = -1
-offset_left = 722.0
-offset_top = 504.0
-offset_right = 1200.0
-offset_bottom = 645.0
+offset_left = 470.0
+offset_top = 355.0
+offset_right = 791.0
+offset_bottom = 449.0
 grow_horizontal = 2
 grow_vertical = 0
 theme = SubResource("Theme_pw7lg")
@@ -101,10 +100,10 @@ text = "Options"
 
 [node name="StoreButton" type="Button" parent="MenuController/Buttons"]
 layout_mode = 0
-offset_left = 722.0
-offset_top = 669.0
-offset_right = 1200.0
-offset_bottom = 810.0
+offset_left = 472.0
+offset_top = 458.0
+offset_right = 793.0
+offset_bottom = 552.0
 theme = SubResource("Theme_6q3yi")
 text = "Store"
 
@@ -113,10 +112,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_top = 3.05
 anchor_bottom = 3.05
-offset_left = 724.0
-offset_top = 706.0
-offset_right = 1202.0
-offset_bottom = 847.0
+offset_left = 470.0
+offset_top = 439.0
+offset_right = 791.0
+offset_bottom = 533.0
 theme = SubResource("Theme_6e5bf")
 text = "Quit"
 
@@ -125,9 +124,10 @@ visible = false
 layout_direction = 1
 layout_mode = 1
 anchors_preset = 0
-offset_left = -18.0
-offset_right = 1894.0
-offset_bottom = 1093.0
+offset_left = -338.0
+offset_top = -189.0
+offset_right = 1574.0
+offset_bottom = 904.0
 script = ExtResource("2_11ymt")
 CharacterOptions = NodePath("OptionsPanel/DogCatToggle/OptionButton")
 
@@ -247,8 +247,10 @@ text = "Back"
 [node name="Store" type="Control" parent="MenuController" groups=["Persist"]]
 visible = false
 anchors_preset = 0
-offset_right = 1915.0
-offset_bottom = 1080.0
+offset_left = -325.0
+offset_top = -234.0
+offset_right = 1590.0
+offset_bottom = 846.0
 script = ExtResource("5_vvihw")
 
 [node name="BackButton2" type="Button" parent="MenuController/Store"]
@@ -425,7 +427,7 @@ grow_horizontal = 0
 grow_vertical = 0
 
 [node name="Tiktok" type="Sprite2D" parent="BottomLogos"]
-position = Vector2(1845, 1046)
+position = Vector2(1210, 691)
 scale = Vector2(0.055, 0.055)
 texture = ExtResource("6_o2hsd")
 
@@ -436,7 +438,7 @@ offset_right = 320.0
 offset_bottom = 320.0
 
 [node name="Godot Icon" type="Sprite2D" parent="BottomLogos"]
-position = Vector2(1885, 1003.2)
+position = Vector2(1250, 648.2)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("6_v0xhb")
 
@@ -449,14 +451,14 @@ uri = "https://godotengine.org/"
 
 [node name="GodotLabel" type="Label" parent="BottomLogos"]
 layout_mode = 1
-offset_left = 1776.0
-offset_top = 994.0
-offset_right = 1858.0
-offset_bottom = 1018.0
+offset_left = 1141.0
+offset_top = 639.0
+offset_right = 1223.0
+offset_bottom = 663.0
 text = "Made with"
 
 [node name="Ko-fiLogo" type="Sprite2D" parent="BottomLogos"]
-position = Vector2(1885, 1046)
+position = Vector2(1250, 691)
 scale = Vector2(0.141, 0.141)
 texture = ExtResource("8_87rlu")
 

@@ -1,9 +1,3 @@
-res://Scenes/music.tscn
-res://Scenes/sound.tscn
-res://Scripts/sound.gd
-res://Scripts/global.gd
-res://Scripts/music.gd
 res://Scenes/start.tscn
 res://Scenes/main.tscn
-res://Scripts/MenuController.gd
-res://Scripts/gamemanager.gd
+res://Scenes/music.tscn

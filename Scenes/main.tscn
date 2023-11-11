@@ -128,8 +128,8 @@ metadata/_edit_horizontal_guides_ = []
 [node name="MainMap" type="TileMap" parent="."]
 z_index = -14
 z_as_relative = false
-position = Vector2(217, 0)
-scale = Vector2(1.04175, 1.04756)
+position = Vector2(92, 21)
+scale = Vector2(0.700904, 0.680579)
 tile_set = SubResource("TileSet_tjqjl")
 format = 2
 layer_0/name = "Longdog"
@@ -185,8 +185,8 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 206.0
-offset_right = 1775.0
+offset_left = 2.0
+offset_right = 1571.0
 offset_bottom = 1026.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -194,8 +194,7 @@ scale = Vector2(1.00924, 1)
 
 [node name="ScoreContainer" type="Sprite2D" parent="UIController"]
 z_index = -1
-position = Vector2(61.4323, 362)
-scale = Vector2(2, 2)
+position = Vector2(149.618, 209)
 texture = ExtResource("4_p0rxw")
 
 [node name="Score" type="Label" parent="UIController/ScoreContainer"]
@@ -262,10 +261,11 @@ visible = false
 z_index = 100
 z_as_relative = false
 anchors_preset = 0
-offset_left = 10.8993
-offset_top = -45.0
-offset_right = 1579.9
-offset_bottom = 981.0
+offset_left = 31.707
+offset_top = -50.0
+offset_right = 1600.71
+offset_bottom = 976.0
+scale = Vector2(0.75, 0.75)
 script = ExtResource("9_iwrwt")
 
 [node name="PauseText" type="Label" parent="UIController/PauseScreen"]

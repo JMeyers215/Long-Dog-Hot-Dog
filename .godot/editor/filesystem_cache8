@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699559961
+::res://::1699675179
 default_bus_layout.tres::AudioBusLayout::6931905679315609555::1699020653::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1699340960::0::1::::<><>::
 ::res://Assets/::1699546259
@@ -30,20 +30,19 @@ long cat sprite sheet.png::CompressedTexture2D::266973096974608347::1698815532::
 long dog sprite sheet.png::CompressedTexture2D::6587929524559053920::1698815517::1698815615::1::::<><>::
 walls2 tileset.png::CompressedTexture2D::6795187746286977866::1698774334::1698774335::1::::<><>::
 walls tileset.png::CompressedTexture2D::6073980136341730032::1698344288::1698345284::1::::<><>::
-::res://Scenes/::1699563972
-main.tscn::PackedScene::184981153413853730::1699563972::0::1::::<><>::res://Scripts/gamemanager.gd<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://c04iibxwfu801::::res://Assets/Tiles/long dog sprite sheet.png<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://h382qq7a2f3d::::res://Assets/Sprites/Score Container.png<>uid://c32v0qkdq5uqk::::res://Assets/Tiles/walls2 tileset.png<>uid://d2lajetu26kt::::res://Assets/Tiles/long cat sprite sheet.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>res://Scripts/PauseScreen.gd
+::res://Scenes/::1699598512
+main.tscn::PackedScene::184981153413853730::1699598512::0::1::::<><>::res://Scripts/gamemanager.gd<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://c04iibxwfu801::::res://Assets/Tiles/long dog sprite sheet.png<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://h382qq7a2f3d::::res://Assets/Sprites/Score Container.png<>uid://c32v0qkdq5uqk::::res://Assets/Tiles/walls2 tileset.png<>uid://d2lajetu26kt::::res://Assets/Tiles/long cat sprite sheet.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>res://Scripts/PauseScreen.gd<>uid://cawkdbg0pi0pg::::res://Sounds/Get_Item_DRY_10.wav
+music.tscn::PackedScene::5552284704701405660::1699598512::0::1::::<><>::res://Scripts/music.gd
 options.tscn::PackedScene::1413699212774315797::1699034513::0::1::::<><>::
-music.tscn::PackedScene::5552284704701405660::1699563972::0::1::::<><>::res://Scripts/music.gd
-start.tscn::PackedScene::3214578671550167500::1699563972::0::1::::<><>::res://Scripts/MenuController.gd<>res://Scripts/Options.gd<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>res://Scripts/Store.gd<>uid://vhk530uec203::::res://Assets/tik-tok-logo-33082.png<>uid://2dahjsm3dnxb::::res://Assets/icon.svg<>uid://dwlvj6kngg43m::::res://Assets/Ko-Fi Logo.png<>uid://br56sw7ryrucl::::res://Assets/Sprites/Long Body Studios Logo and Name (POC).png
-::res://Scripts/::1699563971
-gamemanager.gd::GDScript::-1::1699340709::0::1::::<>Node2D<>::
+start.tscn::PackedScene::3214578671550167500::1699598512::0::1::::<><>::res://Scripts/MenuController.gd<>res://Scripts/Options.gd<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>res://Scripts/Store.gd<>uid://vhk530uec203::::res://Assets/tik-tok-logo-33082.png<>uid://2dahjsm3dnxb::::res://Assets/icon.svg<>uid://dwlvj6kngg43m::::res://Assets/Ko-Fi Logo.png<>uid://br56sw7ryrucl::::res://Assets/Sprites/Long Body Studios Logo and Name (POC).png<>uid://dscvj3uw54200::::res://Sounds/Button 5.mp3
+::res://Scripts/::1699565390
+gamemanager.gd::GDScript::-1::1699565390::0::1::::<>Node2D<>::
 global.gd::GDScript::-1::1699559335::0::1::::<>Node<>::
-MenuController.gd::GDScript::-1::1699559977::0::1::::<>Control<>::
+MenuController.gd::GDScript::-1::1699565342::0::1::::<>Control<>::
+music.gd::GDScript::-1::1699559785::0::1::::<>AudioStreamPlayer<>::
+musicplayer.gd::GDScript::-1::1699546581::0::1::::<>Node<>::
 Options.gd::GDScript::-1::1699340602::0::1::::<>Control<>::
 PauseScreen.gd::GDScript::-1::1699339027::0::1::::<>Control<>::
-musicplayer.gd::GDScript::-1::1699546581::0::1::::<>Node<>::
-music.gd::GDScript::-1::1699559785::0::1::::<>AudioStreamPlayer<>::
-sound.gd::GDScript::-1::1699563971::0::1::::<>Node<>::
 Store.gd::GDScript::-1::1699416973::0::1::::<>Control<>::
 ::res://shader_cache/::1699053692
 ::res://shader_cache/BlitShaderRD/::1699053692
@@ -219,7 +218,7 @@ Store.gd::GDScript::-1::1699416973::0::1::::<>Control<>::
 ::res://shader_cache/VrsShaderRD/::1699053692
 ::res://shader_cache/VrsShaderRD/692f721edbab6d58a28802ef0b40d37bb06cd741eacdfb7ff39b7ace79345d0a/::1698210047
 ::res://shader_cache/VrsShaderRD/a271822a628e8b2be1f1a202617a5803c4d34677d53c14e0d79fec3fe5b86c51/::1699053692
-::res://Sounds/::1699549322
-Button 5.mp3::AudioStreamMP3::8428082623655979103::1699548697::1699564057::1::::<><>::
+::res://Sounds/::1699564179
+Button 5.mp3::AudioStreamMP3::8428082623655979103::1699548697::1699564179::1::::<><>::
 Get_Item_DRY_10.wav::AudioStreamWAV::4818870268233347640::1699548936::1699549239::1::::<><>::
 Positive_Jingle_DRY_04.wav::AudioStreamWAV::6524314597519922817::1699549320::1699549322::1::::<><>::
