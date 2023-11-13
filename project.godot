@@ -18,7 +18,7 @@ config/icon="res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png"
 [autoload]
 
 Global="*res://Scripts/global.gd"
-Musicplayer="*res://Scripts/musicplayer.gd"
+MusicPlayer="*res://Scenes/music.tscn"
 
 [display]
 

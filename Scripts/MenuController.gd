@@ -1,5 +1,8 @@
 extends Control
 
+func _physics_process(delta: float) -> void:
+	$"../ButtonNoise".volume_db = (Global.sound_option * 10 - 100)
+
 func _on_start_button_pressed() -> void:
 	$"../ButtonNoise".play()
 	get_tree().change_scene_to_file("res://Scenes/main.tscn")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bl2fv2cnyl38c"]
+[gd_scene load_steps=26 format=3 uid="uid://bl2fv2cnyl38c"]
 
 [ext_resource type="Script" path="res://Scripts/MenuController.gd" id="1_nviu4"]
 [ext_resource type="Script" path="res://Scripts/Options.gd" id="2_11ymt"]
@@ -6,9 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://cg7qprvxe6fiq" path="res://Assets/Sprites/Cat Fish Sprite.png" id="4_15ubo"]
 [ext_resource type="Texture2D" uid="uid://blxpllk2dytqa" path="res://Assets/Tiles/background tileset.png" id="5_ngera"]
 [ext_resource type="Script" path="res://Scripts/Store.gd" id="5_vvihw"]
+[ext_resource type="PackedScene" uid="uid://d4cwy3ygtdatq" path="res://Scenes/music_slider.tscn" id="6_7hd6j"]
 [ext_resource type="Texture2D" uid="uid://vhk530uec203" path="res://Assets/tik-tok-logo-33082.png" id="6_o2hsd"]
 [ext_resource type="Texture2D" uid="uid://2dahjsm3dnxb" path="res://Assets/icon.svg" id="6_v0xhb"]
+[ext_resource type="PackedScene" uid="uid://4aaeupryrymk" path="res://Scenes/sound_slider.tscn" id="7_ygy81"]
 [ext_resource type="Texture2D" uid="uid://dwlvj6kngg43m" path="res://Assets/Ko-Fi Logo.png" id="8_87rlu"]
+[ext_resource type="PackedScene" uid="uid://ogkvbc3sh6hg" path="res://Scenes/item_panel.tscn" id="9_t5uft"]
 [ext_resource type="Texture2D" uid="uid://br56sw7ryrucl" path="res://Assets/Sprites/Long Body Studios Logo and Name (POC).png" id="10_5r067"]
 [ext_resource type="AudioStream" uid="uid://dscvj3uw54200" path="res://Sounds/Button 5.mp3" id="11_vx2pc"]
 
@@ -66,10 +69,12 @@ anchors_preset = 0
 script = ExtResource("1_nviu4")
 
 [node name="Title" type="Sprite2D" parent="MenuController"]
+visible = false
 position = Vector2(609, 131)
 texture = ExtResource("10_5r067")
 
 [node name="Buttons" type="Control" parent="MenuController"]
+visible = false
 layout_mode = 1
 anchors_preset = 0
 offset_top = 34.0
@@ -211,29 +216,19 @@ text = "Sound Volume
 "
 label_settings = SubResource("LabelSettings_otyq4")
 
-[node name="MusicSlider" type="HSlider" parent="MenuController/Options/OptionsPanel/SoundOptions"]
+[node name="MusicSlider" parent="MenuController/Options/OptionsPanel/SoundOptions" instance=ExtResource("6_7hd6j")]
 layout_mode = 0
-offset_left = 90.0
-offset_top = 50.0
-offset_right = 397.0
-offset_bottom = 134.0
-min_value = 1.0
-max_value = 10.0
-value = 1.0
-tick_count = 10
-ticks_on_borders = true
+offset_left = 79.0
+offset_top = 38.0
+offset_right = 386.0
+offset_bottom = 122.0
 
-[node name="SoundSlider" type="HSlider" parent="MenuController/Options/OptionsPanel/SoundOptions"]
+[node name="SoundSlider" parent="MenuController/Options/OptionsPanel/SoundOptions" instance=ExtResource("7_ygy81")]
 layout_mode = 0
-offset_left = 92.0
-offset_top = 133.0
-offset_right = 399.0
-offset_bottom = 217.0
-min_value = 1.0
-max_value = 10.0
-value = 1.0
-tick_count = 10
-ticks_on_borders = true
+offset_left = 85.0
+offset_top = 132.0
+offset_right = 392.0
+offset_bottom = 216.0
 
 [node name="BackButton" type="Button" parent="MenuController/Options/OptionsPanel"]
 z_index = 5
@@ -245,7 +240,6 @@ offset_bottom = 570.0
 text = "Back"
 
 [node name="Store" type="Control" parent="MenuController" groups=["Persist"]]
-visible = false
 anchors_preset = 0
 offset_left = -325.0
 offset_top = -234.0
@@ -264,150 +258,36 @@ text = "Back"
 
 [node name="StorePanel" type="Panel" parent="MenuController/Store"]
 layout_mode = 0
-offset_left = -806.0
+offset_left = -803.0
 offset_top = 379.0
-offset_right = 2759.0
+offset_right = 2762.0
 offset_bottom = 764.0
 
-[node name="StoreItem" type="Control" parent="MenuController/Store/StorePanel"]
+[node name="StoreItems" type="Control" parent="MenuController/Store/StorePanel"]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="ItemPanel" type="Panel" parent="MenuController/Store/StorePanel/StoreItem"]
+[node name="ItemPanel" parent="MenuController/Store/StorePanel/StoreItems" instance=ExtResource("9_t5uft")]
 layout_mode = 0
-offset_left = 1457.0
-offset_top = 14.0
-offset_right = 1644.0
-offset_bottom = 374.0
+offset_left = 1917.0
+offset_top = 13.0
+offset_right = 2104.0
+offset_bottom = 373.0
 
-[node name="PlaceholderItemArt" type="Sprite2D" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel"]
-position = Vector2(92, 95)
-scale = Vector2(5, 5)
-texture = ExtResource("4_15ubo")
-
-[node name="ItemButton" type="Button" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel"]
-editor_description = "Try to use one button, changing the text and functionality based on booleans/options saved in Global."
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -46.5
-offset_top = -86.0
-offset_right = 46.5
-offset_bottom = -29.0
-grow_horizontal = 2
-grow_vertical = 0
-text = "Buy"
-
-[node name="Cost" type="Label" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel"]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -39.5
-offset_top = -28.0
-offset_right = 39.5
-offset_bottom = -4.0
-grow_horizontal = 2
-grow_vertical = 0
-text = "Cost: 50"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="ItemPanel2" type="Panel" parent="MenuController/Store/StorePanel/StoreItem"]
+[node name="ItemPanel2" parent="MenuController/Store/StorePanel/StoreItems" instance=ExtResource("9_t5uft")]
 layout_mode = 0
-offset_left = 1673.0
-offset_top = 14.0
-offset_right = 1860.0
-offset_bottom = 374.0
+offset_left = 1666.0
+offset_top = 16.0
+offset_right = 1853.0
+offset_bottom = 376.0
 
-[node name="PlaceholderItemArt" type="Sprite2D" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel2"]
-position = Vector2(92, 95)
-scale = Vector2(5, 5)
-texture = ExtResource("4_15ubo")
-
-[node name="ItemButton" type="Button" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel2"]
-editor_description = "Try to use one button, changing the text and functionality based on booleans/options saved in Global."
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -46.5
-offset_top = -86.0
-offset_right = 46.5
-offset_bottom = -29.0
-grow_horizontal = 2
-grow_vertical = 0
-text = "Buy"
-
-[node name="Cost" type="Label" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel2"]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -39.5
-offset_top = -28.0
-offset_right = 39.5
-offset_bottom = -4.0
-grow_horizontal = 2
-grow_vertical = 0
-text = "Cost: 50"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="ItemPanel3" type="Panel" parent="MenuController/Store/StorePanel/StoreItem"]
+[node name="ItemPanel3" parent="MenuController/Store/StorePanel/StoreItems" instance=ExtResource("9_t5uft")]
 layout_mode = 0
-offset_left = 1886.0
-offset_top = 14.0
-offset_right = 2073.0
-offset_bottom = 374.0
-
-[node name="PlaceholderItemArt" type="Sprite2D" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel3"]
-position = Vector2(92, 95)
-scale = Vector2(5, 5)
-texture = ExtResource("4_15ubo")
-
-[node name="ItemButton" type="Button" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel3"]
-editor_description = "Try to use one button, changing the text and functionality based on booleans/options saved in Global."
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -46.5
-offset_top = -86.0
-offset_right = 46.5
-offset_bottom = -29.0
-grow_horizontal = 2
-grow_vertical = 0
-text = "Buy"
-
-[node name="Cost" type="Label" parent="MenuController/Store/StorePanel/StoreItem/ItemPanel3"]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -39.5
-offset_top = -28.0
-offset_right = 39.5
-offset_bottom = -4.0
-grow_horizontal = 2
-grow_vertical = 0
-text = "Cost: 50"
-horizontal_alignment = 1
-vertical_alignment = 1
+offset_left = 1421.0
+offset_top = 11.0
+offset_right = 1608.0
+offset_bottom = 371.0
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -1000
@@ -476,6 +356,8 @@ theme = SubResource("Theme_ldv3h")
 
 [node name="ButtonNoise" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("11_vx2pc")
+volume_db = 1.0
+bus = &"SFX"
 
 [connection signal="pressed" from="MenuController/Buttons/StartButton" to="MenuController" method="_on_start_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/OptionButton" to="MenuController" method="_on_option_button_pressed"]

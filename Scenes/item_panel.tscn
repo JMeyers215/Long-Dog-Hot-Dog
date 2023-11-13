@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://ogkvbc3sh6hg"]
+
+[ext_resource type="Texture2D" uid="uid://cg7qprvxe6fiq" path="res://Assets/Sprites/Cat Fish Sprite.png" id="1_earjf"]
+[ext_resource type="Script" path="res://Scripts/item_panel.gd" id="1_hvson"]
+
+[node name="ItemPanel" type="Panel"]
+offset_right = 187.0
+offset_bottom = 360.0
+script = ExtResource("1_hvson")
+
+[node name="PlaceholderItemArt" type="Sprite2D" parent="."]
+position = Vector2(92, 95)
+texture = ExtResource("1_earjf")
+
+[node name="ItemButton" type="Button" parent="."]
+editor_description = "Try to use one button, changing the text and functionality based on booleans/options saved in Global."
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -46.5
+offset_top = -86.0
+offset_right = 46.5
+offset_bottom = -29.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Buy"
+
+[node name="Cost" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -39.5
+offset_top = -28.0
+offset_right = 39.5
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Cost: 50"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="ItemButton" to="." method="_on_item_button_pressed"]

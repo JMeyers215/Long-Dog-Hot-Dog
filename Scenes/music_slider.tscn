@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4cwy3ygtdatq"]
+
+[ext_resource type="Script" path="res://Scripts/music_slider.gd" id="1_t25pu"]
+
+[node name="MusicSlider" type="HSlider"]
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 306.0
+offset_bottom = 83.0
+max_value = 1.0
+step = 0.001
+value = 1.0
+ticks_on_borders = true
+script = ExtResource("1_t25pu")
+bus_name = "Music"
+
+[connection signal="value_changed" from="." to="." method="_on_value_changed"]

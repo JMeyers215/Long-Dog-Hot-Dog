@@ -8,8 +8,8 @@ var high_score : int = 0
 
 #options variables
 var dog_or_cat : String = "Dog"
-var music_option : int = 1
-var sound_option : int = 1
+var music_option : float = 0.5
+var sound_option : float = 0.5
 
 #defines the save path
 const SAVE_PATH = "user://LDHD.json"

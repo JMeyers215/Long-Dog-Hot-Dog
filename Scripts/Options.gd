@@ -1,8 +1,14 @@
 extends Control
 
 @export var CharacterOptions : OptionButton
+
+var bus_name : String
+
+var bus_index : int
+
 func _ready() -> void:
-	pass
+	$OptionsPanel/SoundOptions/MusicSlider.value = Global.music_option
+	$OptionsPanel/SoundOptions/SoundSlider.value = Global.sound_option
 
 func _physics_process(delta: float) -> void:
 	if Global.dog_or_cat == "Dog":
