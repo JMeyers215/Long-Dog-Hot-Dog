@@ -1,6 +1,4 @@
-res://Scenes/start.tscn
 res://Scenes/main.tscn
+res://Scenes/start.tscn
 res://Scenes/music.tscn
 res://Scripts/gamemanager.gd
-res://Scripts/PauseScreen.gd
-res://Scripts/MenuController.gd

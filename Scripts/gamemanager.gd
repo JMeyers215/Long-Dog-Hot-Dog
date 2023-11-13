@@ -1,7 +1,7 @@
 extends Node2D
 
 var tilemap : TileMap
-var longdog_body = [Vector2(24,15),Vector2(23,15),Vector2(22,15)]
+var longdog_body = [Vector2(8,7),Vector2(7,7),Vector2(6,7)]
 var old_head_pos
 var new_head
 var longdog_direction = Vector2(1,0)
@@ -55,13 +55,13 @@ func _physics_process(delta: float) -> void:
 	high_score.text = str("High Score: ", int(Global.high_score))
 	total_dogs.text = str(int(Global.total_count))
 	
-	if longdog_body.size() == 816:
+	if longdog_body.size() == 280:
 		win_game()
 
 func place_hotdog():
 	randomize()
-	var x = randi_range(7,41)
-	var y = randi_range(3,27)
+	var x = randi_range(3,22)
+	var y = randi_range(1,14)
 	return Vector2(x,y)
 
 func draw_hotdog():
@@ -187,7 +187,7 @@ func check_hotdog():
 func check_game_over():
 	var head = longdog_body[0]
 	#longdog leaves screen
-	if head.x > 41 || head.x < 7 || head.y < 3 || head.y > 27:
+	if head.x > 22 || head.x < 3 || head.y < 1 || head.y > 14:
 		game_over()
 	#longdog hits tail
 	for block in longdog_body.slice(1,longdog_body.size()):
@@ -196,7 +196,7 @@ func check_game_over():
 
 func game_over():
 	#temp reset functionality based from tutorial
-	longdog_body = [Vector2(24,15),Vector2(23,15),Vector2(22,15)]
+	longdog_body = [Vector2(8,7),Vector2(7,7),Vector2(6,7)]
 	longdog_direction = Vector2(1,0)
 	if score_count > Global.high_score :
 		Global.high_score = score_count
@@ -225,7 +225,7 @@ func win_game():
 
 func _on_restart_button_pressed() -> void:
 	win_game_check = false
-	longdog_body = [Vector2(24,15),Vector2(23,15),Vector2(22,15)]
+	longdog_body = [Vector2(8,7),Vector2(7,7),Vector2(6,7)]
 	longdog_direction = Vector2(1,0)
 	$UIController/WinScreen.visible = false
 	timer.set_paused(false)

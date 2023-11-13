@@ -35,7 +35,7 @@ font_size = 32
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_epb0k"]
 texture = ExtResource("5_ngera")
-texture_region_size = Vector2i(32, 32)
+texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -50,7 +50,7 @@ texture_region_size = Vector2i(32, 32)
 0:1/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_aar6t"]
-tile_size = Vector2i(32, 32)
+tile_size = Vector2i(64, 64)
 sources/1 = SubResource("TileSetAtlasSource_epb0k")
 
 [sub_resource type="SystemFont" id="SystemFont_6dpbk"]
@@ -480,8 +480,8 @@ stream = ExtResource("11_vx2pc")
 [connection signal="pressed" from="MenuController/Buttons/StartButton" to="MenuController" method="_on_start_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/OptionButton" to="MenuController" method="_on_option_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/StoreButton" to="MenuController" method="_on_store_button_pressed"]
-[connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_store_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_quit_button_pressed"]
+[connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_store_button_pressed"]
 [connection signal="item_selected" from="MenuController/Options/OptionsPanel/DogCatToggle/OptionButton" to="MenuController/Options" method="_on_option_button_item_selected"]
 [connection signal="pressed" from="MenuController/Options/OptionsPanel/BackButton" to="MenuController" method="_on_back_button_pressed"]
 [connection signal="pressed" from="MenuController/Store/BackButton2" to="MenuController" method="_on_back_button_pressed"]
