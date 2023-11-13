@@ -1,12 +1,12 @@
+Button
+Panel
+Label
+PanelContainer
+Control
 AudioStreamPlayer2D
 AudioStreamPlayer
 Node
-Label
-Button
-Panel
-Control
 Sprite2D
-PanelContainer
 AspectRatioContainer
 Container
 HBoxContainer

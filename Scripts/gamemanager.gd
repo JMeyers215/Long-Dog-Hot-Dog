@@ -7,6 +7,8 @@ var new_head
 var longdog_direction = Vector2(1,0)
 var add_hotdog : bool = false
 
+var win_game_check : bool = false
+
 var timer : Timer
 #change to 0, and 2 for Dog// 3, and 5 for Cat
 var longdog : int = 0
@@ -52,6 +54,9 @@ func _physics_process(delta: float) -> void:
 	body_check()
 	high_score.text = str("High Score: ", int(Global.high_score))
 	total_dogs.text = str(int(Global.total_count))
+	
+	if longdog_body.size() == 816:
+		win_game()
 
 func place_hotdog():
 	randomize()
@@ -164,10 +169,10 @@ func _input(event):
 		if not longdog_direction == Vector2(1,0) and not relation2(old_head_pos,new_head) == "right":
 			longdog_direction = Vector2(-1,0)
 		
-	if Input.is_action_just_pressed("pause") && timer.is_paused() == false:
+	if Input.is_action_just_pressed("pause") && timer.is_paused() == false && win_game_check == false:
 		timer.set_paused(true)
 		$UIController/PauseScreen.visible = true
-	elif Input.is_action_just_pressed("pause") && timer.is_paused() == true:
+	elif Input.is_action_just_pressed("pause") && timer.is_paused() == true && win_game_check == false:
 		timer.set_paused(false)
 		$UIController/PauseScreen.visible = false
 
@@ -209,3 +214,22 @@ func add_count():
 	collection_amt += 1
 	coll_amt.text = str("x ", int(collection_amt))
 
+func win_game():
+	timer.set_paused(true)
+	$UIController/WinScreen.visible = true
+	win_game_check = true
+	score_count *= 2
+	if score_count > Global.high_score :
+		Global.high_score = score_count
+	collection_amt += 100
+
+func _on_restart_button_pressed() -> void:
+	win_game_check = false
+	longdog_body = [Vector2(24,15),Vector2(23,15),Vector2(22,15)]
+	longdog_direction = Vector2(1,0)
+	$UIController/WinScreen.visible = false
+	timer.set_paused(false)
+	
+	score_count = 0
+	collection_amt = 0
+	coll_amt.text = str("x ", "0")
