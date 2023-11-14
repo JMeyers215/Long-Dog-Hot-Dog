@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://bl2fv2cnyl38c"]
+[gd_scene load_steps=28 format=3 uid="uid://bl2fv2cnyl38c"]
 
 [ext_resource type="Script" path="res://Scripts/MenuController.gd" id="1_nviu4"]
 [ext_resource type="Script" path="res://Scripts/Options.gd" id="2_11ymt"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://dwlvj6kngg43m" path="res://Assets/Ko-Fi Logo.png" id="8_87rlu"]
 [ext_resource type="PackedScene" uid="uid://ogkvbc3sh6hg" path="res://Scenes/item_panel.tscn" id="9_t5uft"]
 [ext_resource type="Texture2D" uid="uid://br56sw7ryrucl" path="res://Assets/Sprites/Long Body Studios Logo and Name (POC).png" id="10_5r067"]
+[ext_resource type="Texture2D" uid="uid://de6mm8k1mu3uw" path="res://Assets/twitter logo.jpg" id="11_1c18d"]
 [ext_resource type="AudioStream" uid="uid://dscvj3uw54200" path="res://Sounds/Button 5.mp3" id="11_vx2pc"]
 
 [sub_resource type="Theme" id="Theme_b8iwh"]
@@ -368,6 +369,18 @@ anchor_bottom = 1.0
 grow_horizontal = 0
 grow_vertical = 0
 
+[node name="TwitterLogo" type="Sprite2D" parent="BottomLogos"]
+position = Vector2(1172, 691)
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("11_1c18d")
+
+[node name="LinkButton" type="LinkButton" parent="BottomLogos/TwitterLogo"]
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+uri = "https://twitter.com/ScuttledSquid"
+
 [node name="Tiktok" type="Sprite2D" parent="BottomLogos"]
 position = Vector2(1210, 691)
 scale = Vector2(0.055, 0.055)
@@ -378,6 +391,7 @@ offset_left = -320.0
 offset_top = -320.0
 offset_right = 320.0
 offset_bottom = 320.0
+uri = "https://www.tiktok.com/@scuttledsquidgames"
 
 [node name="Godot Icon" type="Sprite2D" parent="BottomLogos"]
 position = Vector2(1250, 648.2)
