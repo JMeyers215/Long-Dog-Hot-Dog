@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://bl2fv2cnyl38c"]
+[gd_scene load_steps=29 format=3 uid="uid://bl2fv2cnyl38c"]
 
 [ext_resource type="Script" path="res://Scripts/MenuController.gd" id="1_nviu4"]
 [ext_resource type="Script" path="res://Scripts/Options.gd" id="2_11ymt"]
@@ -38,6 +38,9 @@ font_size = 32
 font_size = 32
 
 [sub_resource type="LabelSettings" id="LabelSettings_tddo6"]
+font_size = 24
+
+[sub_resource type="LabelSettings" id="LabelSettings_kn64q"]
 font_size = 24
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_epb0k"]
@@ -320,9 +323,9 @@ offset_bottom = 664.0
 [node name="BackButton" type="Button" parent="MenuController/Credits"]
 z_index = 5
 layout_mode = 0
-offset_left = 558.0
+offset_left = 554.0
 offset_top = 542.0
-offset_right = 748.0
+offset_right = 744.0
 offset_bottom = 614.0
 text = "Back"
 
@@ -341,16 +344,28 @@ label_settings = SubResource("LabelSettings_tddo6")
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="Label" type="Label" parent="MenuController/Credits"]
+[node name="Copywrite" type="Label" parent="MenuController/Credits"]
 layout_mode = 0
-offset_left = 435.0
-offset_top = 265.0
-offset_right = 894.0
-offset_bottom = 382.0
+offset_left = 434.0
+offset_top = 261.0
+offset_right = 893.0
+offset_bottom = 378.0
 text = "Music promoted by https://www.chosic.com/free-music/all/
 Creative Commons CC BY 3.0
 https://creativecommons.org/licenses/by/3.0/
 "
+
+[node name="Label" type="Label" parent="MenuController/Credits"]
+layout_mode = 0
+offset_left = 434.0
+offset_top = 370.0
+offset_right = 871.0
+offset_bottom = 515.0
+text = "Dog and Cat:
+Sage and Deborah, the best dog and cat in the world. "
+label_settings = SubResource("LabelSettings_kn64q")
+horizontal_alignment = 1
+autowrap_mode = 3
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -1000
@@ -439,8 +454,8 @@ bus = &"SFX"
 [connection signal="pressed" from="MenuController/Buttons/StartButton" to="MenuController" method="_on_start_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/OptionButton" to="MenuController" method="_on_option_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/StoreButton" to="MenuController" method="_on_store_button_pressed"]
-[connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_quit_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_store_button_pressed"]
+[connection signal="pressed" from="MenuController/Buttons/QuitButton" to="MenuController" method="_on_quit_button_pressed"]
 [connection signal="pressed" from="MenuController/Buttons/CreditsButton" to="MenuController" method="_on_credits_button_pressed"]
 [connection signal="item_selected" from="MenuController/Options/OptionsPanel/DogCatToggle/OptionButton" to="MenuController/Options" method="_on_option_button_item_selected"]
 [connection signal="pressed" from="MenuController/Options/OptionsPanel/BackButton" to="MenuController" method="_on_back_button_pressed"]

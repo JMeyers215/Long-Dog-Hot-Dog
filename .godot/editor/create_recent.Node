@@ -1,5 +1,6 @@
-LinkButton
+RichTextLabel
 Label
+LinkButton
 Panel
 Control
 Button
@@ -11,5 +12,3 @@ Sprite2D
 AspectRatioContainer
 Container
 HBoxContainer
-OptionButton
-Tree
