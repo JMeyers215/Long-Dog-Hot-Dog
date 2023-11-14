@@ -14,3 +14,4 @@ res://Scenes/music_slider.tscn
 res://Scenes/item_panel.tscn
 res://Scripts/item_panel.gd
 res://Scripts/global.gd
+res://Scripts/PauseScreen.gd

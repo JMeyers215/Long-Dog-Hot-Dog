@@ -1,9 +1,9 @@
-AudioStreamPlayer2D
-Button
-Panel
 Label
-PanelContainer
+Panel
 Control
+Button
+AudioStreamPlayer2D
+PanelContainer
 AudioStreamPlayer
 Node
 Sprite2D

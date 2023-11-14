@@ -19,6 +19,7 @@ func _on_back_button_pressed():
 	$Options.visible = false
 	$Buttons.visible = true
 	$Title.visible = true
+	$Credits.visible = false
 
 func _on_store_button_pressed() -> void:
 	$"../ButtonNoise".play()
@@ -32,4 +33,8 @@ func _on_quit_button_pressed() -> void:
 	Global.save_game()
 	get_tree().quit()
 
-
+func _on_credits_button_pressed() -> void:
+	$"../ButtonNoise".play()
+	$Credits.visible = true
+	$Buttons.visible = false
+	$Title.visible = false
