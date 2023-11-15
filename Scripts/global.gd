@@ -2,6 +2,15 @@ extends Node
 
 @onready var global_vars = get_node("/root/Global")
 
+#store variables
+var equipped : int = -1
+var item_1_id : int = 1
+var item_2_id : int = 0
+var item_3_id : int = 2
+var item_1_bought : bool = false
+var item_2_bought : bool = false
+var item_3_bought : bool = false
+
 #score variables
 var total_count : int = 0
 var high_score : int = 0
@@ -37,7 +46,11 @@ func save_game():
 			high_score = int(high_score),
 			dog_or_cat = str(dog_or_cat),
 			music_option = int(music_option),
-			sound_option = int(sound_option)
+			sound_option = int(sound_option),
+			equipped = int(equipped),
+			item_1_bought = bool(item_1_bought),
+			item_2_bought = bool(item_2_bought),
+			item_3_bought = bool(item_3_bought)
 		}
 	}
 	
@@ -59,9 +72,22 @@ func load_game():
 	global.dog_or_cat = str(save_dict.global.dog_or_cat)
 	global.music_option = int(save_dict.global.music_option)
 	global.sound_option = int(save_dict.global.sound_option)
+	global.equipped = int(save_dict.global.equipped)
+	global.item_1_bought = bool(save_dict.global.item_1_bought)
+	global.item_2_bought = bool(save_dict.global.item_2_bought)
+	global.item_3_bought = bool(save_dict.global.item_3_bought)
 
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_WM_CLOSE_REQUEST:
 		save_game()
 		get_tree().quit()
+
+func buy_item(equipped, cost):
+	total_count -= cost
+	if equipped == item_1_id:
+		item_1_bought = true
+	elif equipped == item_2_id:
+		item_2_bought = true
+	elif equipped == item_3_id:
+		item_3_bought = true

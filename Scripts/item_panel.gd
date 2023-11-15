@@ -6,12 +6,22 @@ var store_items
 var bought : bool = false
 var equipped : bool = false
 
-@export var item : Sprite2D
+@export var item : Texture
 @export var cost : int
+@export var equipped_id : int
+@export var item_name : String
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var store_items = get_tree().get_nodes_in_group("StoreItems")
+	if equipped_id == Global.item_1_id:
+		bought = Global.item_1_bought
+	if equipped_id == Global.item_2_id:
+		bought = Global.item_2_bought
+	if equipped_id == Global.item_3_id:
+		bought = Global.item_3_bought
+	$PlaceholderItemArt.texture = item
+	$Cost.text = "Cost: " + str(cost)
+	$Name.text = item_name	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -19,17 +29,26 @@ func _process(delta: float) -> void:
 		$ItemButton.visible = false
 		$Cost.visible = false
 		$EquipButton.visible = true
+	if equipped_id == Global.equipped:
+		$EquipButton.text = "Unequip"
+	else:
+		$EquipButton.text = "Equip"
 
 func _on_item_button_pressed() -> void:
-	if Global.total_count >= cost:
-		bought = true
-		Global.total_count -= cost
-		#Global.save_game()
+	Global.buy_item(equipped_id, cost)
+	if equipped_id == Global.item_1_id:
+		bought = Global.item_1_bought
+	elif equipped_id == Global.item_2_id:
+		bought = Global.item_2_bought
+	elif equipped_id == Global.item_3_id:
+		bought = Global.item_3_bought 
+	else:
+		bought = false
+	Global.save_game()
 
 func _on_equip_button_pressed() -> void:
-	for node in store_items:
-		if node == self :
-			equipped = true
-		else:
-			node.equipped = false
+	if equipped_id == Global.equipped:
+		Global.equipped = 0
+	else:
+		Global.equipped = equipped_id
 

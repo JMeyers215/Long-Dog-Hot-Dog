@@ -14,6 +14,10 @@ var timer : Timer
 var longdog : int = 0
 var hotdog : int = 2
 
+#hat layer and hat variable
+var hat : int = 4
+var hat_id : int = -1
+
 var hotdog_pos : Vector2
 
 @export var score : Label
@@ -26,6 +30,9 @@ var collection_amt : int = 0
 @export var total_dogs : Label
 
 func _ready():
+	if Global.equipped != hat_id:
+		hat_id = Global.equipped
+	
 	$UIController/PauseScreen.visible = false
 	
 	if Global.dog_or_cat == "Dog":
@@ -68,8 +75,6 @@ func draw_hotdog():
 	$MainMap.set_cell(hotdog,Vector2(hotdog_pos.x,hotdog_pos.y), hotdog, Vector2(0,0))
 
 func draw_longdog():
-#	for block in longdog_body:
-#		$MainMap.set_cell(longdog,Vector2(block.x,block.y),longdog,Vector2(6,0))
 	for block_index in longdog_body.size():
 		var block = longdog_body[block_index]
 		if block_index == 0:
@@ -123,7 +128,9 @@ func move_longdog():
 		old_head_pos = body_copy[0]
 		body_copy.insert(0, new_head)
 		delete_tiles(longdog)
+		delete_tiles(hat)
 		longdog_body = body_copy
+		draw_hat()
 		add_hotdog = false
 	else:
 		var body_copy = longdog_body.slice(0,longdog_body.size()-1, 1, false)
@@ -131,7 +138,10 @@ func move_longdog():
 		old_head_pos = body_copy[0]
 		body_copy.insert(0, new_head)
 		delete_tiles(longdog)
+		delete_tiles(hat)
 		longdog_body = body_copy
+		draw_hat()
+	
 
 func _on_movement_tick_timeout() -> void:
 	draw_hotdog()
@@ -233,3 +243,14 @@ func _on_restart_button_pressed() -> void:
 	score_count = 0
 	collection_amt = 0
 	coll_amt.text = str("x ", "0")
+
+func draw_hat():
+	var head_dir = relation2(longdog_body[0],longdog_body[1])
+	if head_dir == "right":
+		$MainMap.set_cell(hat,longdog_body[0],10,Vector2(hat_id,0),6)
+	if head_dir == "left":
+		$MainMap.set_cell(hat,longdog_body[0],10,Vector2(hat_id,0),5)
+	if head_dir == "up":
+		$MainMap.set_cell(hat,longdog_body[0],10,Vector2(hat_id,0))
+	if head_dir == "down":
+		$MainMap.set_cell(hat,longdog_body[0],10,Vector2(hat_id,0),4)

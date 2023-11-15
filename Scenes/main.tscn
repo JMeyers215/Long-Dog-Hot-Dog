@@ -1,10 +1,11 @@
-[gd_scene load_steps=26 format=3 uid="uid://cvuu3eqg28sc"]
+[gd_scene load_steps=28 format=3 uid="uid://cvuu3eqg28sc"]
 
 [ext_resource type="Script" path="res://Scripts/gamemanager.gd" id="1_4y737"]
 [ext_resource type="Texture2D" uid="uid://blxpllk2dytqa" path="res://Assets/Tiles/background tileset.png" id="1_aeraw"]
 [ext_resource type="Texture2D" uid="uid://c04iibxwfu801" path="res://Assets/Tiles/long dog sprite sheet.png" id="2_u0wou"]
 [ext_resource type="Texture2D" uid="uid://cn73vrr0o610y" path="res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png" id="2_uea86"]
 [ext_resource type="Texture2D" uid="uid://h382qq7a2f3d" path="res://Assets/Sprites/Score Container.png" id="4_p0rxw"]
+[ext_resource type="Texture2D" uid="uid://b6f6t5w0r0lv4" path="res://Assets/Tiles/hats.png" id="4_r4kkq"]
 [ext_resource type="Texture2D" uid="uid://c32v0qkdq5uqk" path="res://Assets/Tiles/walls2 tileset.png" id="5_3vje8"]
 [ext_resource type="Texture2D" uid="uid://d2lajetu26kt" path="res://Assets/Tiles/long cat sprite sheet.png" id="6_chsrg"]
 [ext_resource type="Texture2D" uid="uid://cg7qprvxe6fiq" path="res://Assets/Sprites/Cat Fish Sprite.png" id="7_vw547"]
@@ -48,6 +49,37 @@ use_texture_padding = false
 5:1/0 = 0
 0:0/0 = 0
 0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_may3a"]
+texture = ExtResource("4_r4kkq")
+texture_region_size = Vector2i(64, 64)
+0:0/next_alternative_id = 7
+0:0/0 = 0
+0:0/4 = 4
+0:0/4/flip_v = true
+0:0/5 = 5
+0:0/5/transpose = true
+0:0/6 = 6
+0:0/6/flip_h = true
+0:0/6/transpose = true
+1:0/next_alternative_id = 8
+1:0/0 = 0
+1:0/4 = 4
+1:0/4/flip_v = true
+1:0/5 = 5
+1:0/5/transpose = true
+1:0/6 = 6
+1:0/6/flip_h = true
+1:0/6/transpose = true
+2:0/next_alternative_id = 7
+2:0/0 = 0
+2:0/4 = 4
+2:0/4/flip_v = true
+2:0/5 = 5
+2:0/5/transpose = true
+2:0/6 = 6
+2:0/6/flip_h = true
+2:0/6/transpose = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tvc08"]
 resource_name = "HotDogs"
@@ -103,6 +135,7 @@ sources/2 = SubResource("TileSetAtlasSource_tvc08")
 sources/3 = SubResource("TileSetAtlasSource_8mxfa")
 sources/4 = SubResource("TileSetAtlasSource_vef3r")
 sources/5 = SubResource("TileSetAtlasSource_5sehq")
+sources/10 = SubResource("TileSetAtlasSource_may3a")
 
 [sub_resource type="LabelSettings" id="LabelSettings_xwsfa"]
 
