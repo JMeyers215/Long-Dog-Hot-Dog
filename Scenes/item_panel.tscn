@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cg7qprvxe6fiq" path="res://Assets/Sprites/Cat Fish Sprite.png" id="1_earjf"]
 [ext_resource type="Script" path="res://Scripts/item_panel.gd" id="1_hvson"]
 
-[node name="ItemPanel" type="Panel"]
+[node name="ItemPanel" type="Panel" groups=["StoreItems"]]
 offset_right = 187.0
 offset_bottom = 360.0
 script = ExtResource("1_hvson")
@@ -28,6 +28,15 @@ grow_horizontal = 2
 grow_vertical = 0
 text = "Buy"
 
+[node name="EquipButton" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 47.0
+offset_top = 275.0
+offset_right = 141.0
+offset_bottom = 330.0
+text = "Equip"
+
 [node name="Cost" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 7
@@ -46,3 +55,4 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="pressed" from="ItemButton" to="." method="_on_item_button_pressed"]
+[connection signal="pressed" from="EquipButton" to="." method="_on_equip_button_pressed"]
