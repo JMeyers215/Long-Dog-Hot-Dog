@@ -24,7 +24,6 @@ func _on_store_button_pressed() -> void:
 	$Buttons.visible = false
 	$Title.visible = false
 
-
 func _on_quit_button_pressed() -> void:
 	$"../ButtonNoise".play()
 	Global.save_game()

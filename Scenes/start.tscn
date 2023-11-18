@@ -257,6 +257,7 @@ offset_left = 79.0
 offset_top = 38.0
 offset_right = 386.0
 offset_bottom = 122.0
+value = 0.5
 
 [node name="SoundSlider" parent="MenuController/Options/OptionsPanel/SoundOptions" instance=ExtResource("7_ygy81")]
 layout_mode = 0
@@ -264,6 +265,7 @@ offset_left = 79.0
 offset_top = 132.0
 offset_right = 386.0
 offset_bottom = 216.0
+value = 0.5
 
 [node name="BackButton" type="Button" parent="MenuController/Options/OptionsPanel"]
 z_index = 5
