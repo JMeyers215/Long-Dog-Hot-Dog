@@ -1,7 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700078035
+::res://::1700290023
 default_bus_layout.tres::AudioBusLayout::6931905679315609555::1699895500::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1699340960::0::1::::<><>::
+itchio-textless-black.svg::CompressedTexture2D::8502919291308368251::1700290023::1700290033::1::::<><>::
 ::res://Assets/::1699922105
 icon.svg::CompressedTexture2D::1901304913145794971::1698210045::1699546259::1::::<><>::
 Ko-Fi Logo.png::CompressedTexture2D::8727417539674760424::1699296336::1699341159::1::::<><>::

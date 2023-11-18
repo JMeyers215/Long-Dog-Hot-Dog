@@ -1,0 +1,96 @@
+[gd_scene load_steps=8 format=3 uid="uid://03n3h1pm7g7f"]
+
+[ext_resource type="Texture2D" uid="uid://de6mm8k1mu3uw" path="res://Assets/twitter logo.jpg" id="1_x7hq5"]
+[ext_resource type="Texture2D" uid="uid://vhk530uec203" path="res://Assets/tik-tok-logo-33082.png" id="2_rsh6h"]
+[ext_resource type="Texture2D" uid="uid://2dahjsm3dnxb" path="res://Assets/icon.svg" id="3_n561i"]
+[ext_resource type="Texture2D" uid="uid://dte43rh460w5p" path="res://itchio-textless-black.svg" id="4_gotk4"]
+[ext_resource type="Texture2D" uid="uid://dwlvj6kngg43m" path="res://Assets/Ko-Fi Logo.png" id="5_tujua"]
+
+[sub_resource type="SystemFont" id="SystemFont_6dpbk"]
+
+[sub_resource type="Theme" id="Theme_ldv3h"]
+default_font = SubResource("SystemFont_6dpbk")
+
+[node name="BottomLogos" type="Control"]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="TwitterLogo" type="Sprite2D" parent="."]
+position = Vector2(1172, 691)
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("1_x7hq5")
+
+[node name="LinkButton" type="LinkButton" parent="TwitterLogo"]
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+uri = "https://twitter.com/ScuttledSquid"
+
+[node name="Tiktok" type="Sprite2D" parent="."]
+position = Vector2(1210, 691)
+scale = Vector2(0.055, 0.055)
+texture = ExtResource("2_rsh6h")
+
+[node name="TiktokLink" type="LinkButton" parent="Tiktok"]
+offset_left = -320.0
+offset_top = -320.0
+offset_right = 320.0
+offset_bottom = 320.0
+uri = "https://www.tiktok.com/@scuttledsquidgames"
+
+[node name="Godot Icon" type="Sprite2D" parent="."]
+position = Vector2(1250, 648.2)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_n561i")
+
+[node name="GodotLink" type="LinkButton" parent="Godot Icon"]
+offset_left = -67.0
+offset_top = -67.0
+offset_right = 63.0
+offset_bottom = 63.0
+uri = "https://godotengine.org/"
+
+[node name="GodotLabel" type="Label" parent="."]
+layout_mode = 1
+offset_left = 1141.0
+offset_top = 639.0
+offset_right = 1223.0
+offset_bottom = 663.0
+text = "Made with"
+
+[node name="ItchLogo" type="Sprite2D" parent="."]
+position = Vector2(1131, 691)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_gotk4")
+
+[node name="LinkButton" type="LinkButton" parent="ItchLogo"]
+offset_left = -133.0
+offset_top = -120.0
+offset_right = 133.0
+offset_bottom = 127.0
+uri = "https://scuttledsquidgames.itch.io/"
+
+[node name="Ko-fiLogo" type="Sprite2D" parent="."]
+position = Vector2(1250, 691)
+scale = Vector2(0.141, 0.141)
+texture = ExtResource("5_tujua")
+
+[node name="Kofi" type="LinkButton" parent="Ko-fiLogo"]
+anchors_preset = -1
+anchor_left = -0.000888948
+anchor_top = 0.0396423
+anchor_right = 0.958842
+anchor_bottom = 0.834449
+offset_left = -134.752
+offset_top = -146.021
+offset_right = -132.517
+offset_bottom = -96.9768
+theme = SubResource("Theme_ldv3h")
+uri = "https://ko-fi.com/scuttledsquid"

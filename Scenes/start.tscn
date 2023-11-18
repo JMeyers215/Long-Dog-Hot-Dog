@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://bl2fv2cnyl38c"]
+[gd_scene load_steps=33 format=3 uid="uid://bl2fv2cnyl38c"]
 
 [ext_resource type="Script" path="res://Scripts/MenuController.gd" id="1_nviu4"]
 [ext_resource type="Script" path="res://Scripts/Options.gd" id="2_11ymt"]
@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://de6mm8k1mu3uw" path="res://Assets/twitter logo.jpg" id="11_1c18d"]
 [ext_resource type="AudioStream" uid="uid://dscvj3uw54200" path="res://Sounds/Button 5.mp3" id="11_vx2pc"]
 [ext_resource type="Texture2D" uid="uid://d0k5782mbbbg1" path="res://Assets/Tiles/strawhat.png" id="11_x2fpk"]
+[ext_resource type="Texture2D" uid="uid://dte43rh460w5p" path="res://itchio-textless-black.svg" id="16_wsnk3"]
 
 [sub_resource type="Theme" id="Theme_b8iwh"]
 default_font_size = 45
@@ -92,10 +93,12 @@ anchors_preset = 0
 script = ExtResource("1_nviu4")
 
 [node name="Title" type="Sprite2D" parent="MenuController"]
+visible = false
 position = Vector2(609, 131)
 texture = ExtResource("10_5r067")
 
 [node name="Buttons" type="Control" parent="MenuController"]
+visible = false
 layout_mode = 1
 anchors_preset = 0
 offset_top = 34.0
@@ -158,7 +161,6 @@ grow_vertical = 0
 text = "Credits"
 
 [node name="Options" type="Control" parent="MenuController" node_paths=PackedStringArray("CharacterOptions") groups=["Persist"]]
-visible = false
 layout_direction = 1
 layout_mode = 1
 anchors_preset = 0
@@ -258,9 +260,9 @@ offset_bottom = 122.0
 
 [node name="SoundSlider" parent="MenuController/Options/OptionsPanel/SoundOptions" instance=ExtResource("7_ygy81")]
 layout_mode = 0
-offset_left = 85.0
+offset_left = 79.0
 offset_top = 132.0
-offset_right = 392.0
+offset_right = 386.0
 offset_bottom = 216.0
 
 [node name="BackButton" type="Button" parent="MenuController/Options/OptionsPanel"]
@@ -454,6 +456,18 @@ offset_top = 639.0
 offset_right = 1223.0
 offset_bottom = 663.0
 text = "Made with"
+
+[node name="ItchLogo" type="Sprite2D" parent="BottomLogos"]
+position = Vector2(1131, 691)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("16_wsnk3")
+
+[node name="LinkButton" type="LinkButton" parent="BottomLogos/ItchLogo"]
+offset_left = -133.0
+offset_top = -120.0
+offset_right = 133.0
+offset_bottom = 127.0
+uri = "https://scuttledsquidgames.itch.io/"
 
 [node name="Ko-fiLogo" type="Sprite2D" parent="BottomLogos"]
 position = Vector2(1250, 691)
