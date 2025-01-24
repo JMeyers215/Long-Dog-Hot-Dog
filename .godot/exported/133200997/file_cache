@@ -1,5 +1,9 @@
-res://Scenes/main.tscn::b3f05772a04d7ba17800d16dd3fd41ed::1699340929::res://.godot/exported/133200997/export-2ddd04d543d5858e7f20c9299a8b5096-main.scn
+res://Scenes/main.tscn::483585a2991ea75246b59b7d631cfba7::1700717864::res://.godot/exported/133200997/export-2ddd04d543d5858e7f20c9299a8b5096-main.scn
 res://Scenes/options.tscn::7828704ea1e651f2697e4f70860471d3::1699034513::res://.godot/exported/133200997/export-c5aef61c95e74d91918288704aa47502-options.scn
-res://Scenes/start.tscn::fd8ff480a906d3c2653d7b59acb7ef1a::1699340929::res://.godot/exported/133200997/export-99a5d1e8133907b80507e3bef01afe5d-start.scn
-res://Scenes/store.tscn::b9eab6e28a9b4d78810ac821caff8daa::1699340930::res://.godot/exported/133200997/export-4d0eb5dc838e8a45fb05aa90a2b1ae82-store.scn
-res://default_bus_layout.tres::bfee21723e80aea3f8e9f9b2c988f6dc::1699020653::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
+res://Scenes/start.tscn::2c90603322ae83c42c6d126bca7baece::1700717864::res://.godot/exported/133200997/export-99a5d1e8133907b80507e3bef01afe5d-start.scn
+res://default_bus_layout.tres::5dd830fa3541b68b01fd990a1f271da8::1699895500::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
+res://Scenes/bottom_logos.tscn::44ffc6508c74ffde9c7167c56d394b07::1700290141::res://.godot/exported/133200997/export-419d30e7a0465fc6c0e05b153431f0d9-bottom_logos.scn
+res://Scenes/item_panel.tscn::0ca0506bcc43371d8ff80c4f57496456::1700717864::res://.godot/exported/133200997/export-d5675f8d2101bd233479f3b18275d6dc-item_panel.scn
+res://Scenes/music.tscn::b41ec65514ce4bdd5b0275e61f68f205::1700717864::res://.godot/exported/133200997/export-8a0c1623dae146fc4e600156cf1e3850-music.scn
+res://Scenes/music_slider.tscn::e52fd5f46af847e03e8e787d1f19ab9c::1700717864::res://.godot/exported/133200997/export-96d3011b86277f38abd6f591d4a9a3f3-music_slider.scn
+res://Scenes/sound_slider.tscn::2231b6aa5ed89fcd41e07e7c2c11d190::1700717864::res://.godot/exported/133200997/export-2aa88137136a9fa581fca38cf75adb4d-sound_slider.scn

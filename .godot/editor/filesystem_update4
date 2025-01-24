@@ -1,7 +1,1 @@
 res://Scenes/start.tscn
-res://Scenes/main.tscn
-res://Scenes/music.tscn
-res://Scenes/sound_slider.tscn
-res://Scenes/music_slider.tscn
-res://Scenes/item_panel.tscn
-res://Scripts/MenuController.gd

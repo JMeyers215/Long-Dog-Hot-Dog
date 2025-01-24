@@ -1,8 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700290023
+::res://::1737698305
 default_bus_layout.tres::AudioBusLayout::6931905679315609555::1699895500::0::1::::<><>::
-export_presets.cfg::TextFile::-1::1699340960::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1700717920::0::1::::<><>::
 itchio-textless-black.svg::CompressedTexture2D::8502919291308368251::1700290023::1700290033::1::::<><>::
+Long Dog Hot Dog.apple-touch-icon.png::CompressedTexture2D::3327495889336639951::1700715537::1700715489::1::::<><>::
+Long Dog Hot Dog.icon.png::CompressedTexture2D::819614904442083513::1700715537::1700715489::1::::<><>::
+Long Dog Hot Dog.png::CompressedTexture2D::7099623616803869722::1700715537::1700715489::1::::<><>::
 ::res://Assets/::1699922105
 icon.svg::CompressedTexture2D::1901304913145794971::1698210045::1699546259::1::::<><>::
 Ko-Fi Logo.png::CompressedTexture2D::8727417539674760424::1699296336::1699341159::1::::<><>::
@@ -35,19 +38,27 @@ sleepynightcap.png::CompressedTexture2D::5354387742169674935::1700022154::170002
 strawhat.png::CompressedTexture2D::8936507350285537218::1700018995::1700019441::1::::<><>::
 walls2 tileset.png::CompressedTexture2D::6795187746286977866::1699892098::1699891740::1::::<><>::
 walls tileset.png::CompressedTexture2D::6073980136341730032::1698344288::1698345284::1::::<><>::
-::res://Scenes/::1700023882
-item_panel.tscn::PackedScene::995674805965995592::1700023578::0::1::::<><>::uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>res://Scripts/item_panel.gd<>res://Scripts/MenuController.gd
-main.tscn::PackedScene::184981153413853730::1700023578::0::1::::<><>::res://Scripts/gamemanager.gd<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://c04iibxwfu801::::res://Assets/Tiles/long dog sprite sheet.png<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://h382qq7a2f3d::::res://Assets/Sprites/Score Container.png<>uid://b6f6t5w0r0lv4::::res://Assets/Tiles/hats.png<>uid://c32v0qkdq5uqk::::res://Assets/Tiles/walls2 tileset.png<>uid://d2lajetu26kt::::res://Assets/Tiles/long cat sprite sheet.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>res://Scripts/PauseScreen.gd<>uid://cawkdbg0pi0pg::::res://Sounds/Get_Item_DRY_10.wav
-music.tscn::PackedScene::5552284704701405660::1700023578::0::1::::<><>::res://Scripts/music.gd<>uid://ch77jt85ftg4b::::res://Sounds/Silly-Fun.mp3
-music_slider.tscn::PackedScene::9200247413012173086::1700023578::0::1::::<><>::res://Scripts/music_slider.gd
+::res://FinalHTML/::1700717919
+index.apple-touch-icon.png::CompressedTexture2D::603929178712565574::1700717919::1700716333::1::::<><>::
+index.icon.png::CompressedTexture2D::3956441302030078914::1700717919::1700716333::1::::<><>::
+index.png::CompressedTexture2D::1225618786398852210::1700717919::1700716334::1::::<><>::
+Long Dog Hot Dog.apple-touch-icon.png::CompressedTexture2D::5768514823664906338::1700715637::1700715645::1::::<><>::
+Long Dog Hot Dog.icon.png::CompressedTexture2D::4317608051801555070::1700715637::1700715645::1::::<><>::
+Long Dog Hot Dog.png::CompressedTexture2D::6099887320921702155::1700715637::1700715645::1::::<><>::
+::res://Scenes/::1700717864
+bottom_logos.tscn::PackedScene::1813363399726983421::1700290141::0::1::::<><>::uid://de6mm8k1mu3uw
+item_panel.tscn::PackedScene::995674805965995592::1700717864::0::1::::<><>::uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>res://Scripts/item_panel.gd<>res://Scripts/MenuController.gd
+main.tscn::PackedScene::184981153413853730::1700717864::0::1::::<><>::res://Scripts/gamemanager.gd<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://c04iibxwfu801::::res://Assets/Tiles/long dog sprite sheet.png<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://h382qq7a2f3d::::res://Assets/Sprites/Score Container.png<>uid://b6f6t5w0r0lv4::::res://Assets/Tiles/hats.png<>uid://c32v0qkdq5uqk::::res://Assets/Tiles/walls2 tileset.png<>uid://d2lajetu26kt::::res://Assets/Tiles/long cat sprite sheet.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>res://Scripts/PauseScreen.gd<>uid://cawkdbg0pi0pg::::res://Sounds/Get_Item_DRY_10.wav
+music.tscn::PackedScene::5552284704701405660::1700717864::0::1::::<><>::res://Scripts/music.gd<>uid://ch77jt85ftg4b::::res://Sounds/Silly-Fun.mp3
+music_slider.tscn::PackedScene::9200247413012173086::1700717864::0::1::::<><>::res://Scripts/music_slider.gd
 options.tscn::PackedScene::1413699212774315797::1699034513::0::1::::<><>::
-sound_slider.tscn::PackedScene::2035484683122798442::1700023578::0::1::::<><>::res://Scripts/sound_slider.gd
-start.tscn::PackedScene::3214578671550167500::1700023882::0::1::::<><>::res://Scripts/MenuController.gd<>res://Scripts/Options.gd<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://d4cwy3ygtdatq::::res://Scenes/music_slider.tscn<>uid://vhk530uec203::::res://Assets/tik-tok-logo-33082.png<>uid://2dahjsm3dnxb::::res://Assets/icon.svg<>uid://4aaeupryrymk::::res://Scenes/sound_slider.tscn<>uid://dwlvj6kngg43m::::res://Assets/Ko-Fi Logo.png<>uid://ogkvbc3sh6hg::::res://Scenes/item_panel.tscn<>uid://cu7sv3le041id::::res://Assets/Tiles/dogcollar.png<>uid://br56sw7ryrucl::::res://Assets/Sprites/Long Body Studios Logo and Name (POC).png<>uid://cijx8pkmmp8lf::::res://Assets/Tiles/sleepynightcap.png<>uid://de6mm8k1mu3uw::::res://Assets/twitter logo.jpg<>uid://dscvj3uw54200::::res://Sounds/Button 5.mp3<>uid://d0k5782mbbbg1::::res://Assets/Tiles/strawhat.png
-::res://Scripts/::1700023510
+sound_slider.tscn::PackedScene::2035484683122798442::1700717864::0::1::::<><>::res://Scripts/sound_slider.gd
+start.tscn::PackedScene::3214578671550167500::1700717864::0::1::::<><>::res://Scripts/MenuController.gd<>res://Scripts/Options.gd<>uid://cn73vrr0o610y::::res://Assets/Sprites/Long Dog Hot Dog - Hot Dog Sprite.png<>uid://cg7qprvxe6fiq::::res://Assets/Sprites/Cat Fish Sprite.png<>uid://blxpllk2dytqa::::res://Assets/Tiles/background tileset.png<>uid://d4cwy3ygtdatq::::res://Scenes/music_slider.tscn<>uid://vhk530uec203::::res://Assets/tik-tok-logo-33082.png<>uid://2dahjsm3dnxb::::res://Assets/icon.svg<>uid://4aaeupryrymk::::res://Scenes/sound_slider.tscn<>uid://dwlvj6kngg43m::::res://Assets/Ko-Fi Logo.png<>uid://ogkvbc3sh6hg::::res://Scenes/item_panel.tscn<>uid://cu7sv3le041id::::res://Assets/Tiles/dogcollar.png<>uid://br56sw7ryrucl::::res://Assets/Sprites/Long Body Studios Logo and Name (POC).png<>uid://cijx8pkmmp8lf::::res://Assets/Tiles/sleepynightcap.png<>uid://de6mm8k1mu3uw::::res://Assets/twitter logo.jpg<>uid://dscvj3uw54200::::res://Sounds/Button 5.mp3<>uid://d0k5782mbbbg1::::res://Assets/Tiles/strawhat.png<>uid://dte43rh460w5p::::res://itchio-textless-black.svg<>uid://lxa65aq6ki0h::::res://Long Dog Hot Dog.icon.png
+::res://Scripts/::1700717913
 gamemanager.gd::GDScript::-1::1700021952::0::1::::<>Node2D<>::
-global.gd::GDScript::-1::1700023510::0::1::::<>Node<>::
-item_panel.gd::GDScript::-1::1700023438::0::1::::store_item<>Panel<>::
-MenuController.gd::GDScript::-1::1700020067::0::1::::<>Control<>::
+global.gd::GDScript::-1::1700717596::0::1::::<>Node<>::
+item_panel.gd::GDScript::-1::1700717913::0::1::::store_item<>Panel<>::
+MenuController.gd::GDScript::-1::1700341388::0::1::::<>Control<>::
 music.gd::GDScript::-1::1700005104::0::1::::<>AudioStreamPlayer<>::
 music_slider.gd::GDScript::-1::1700005106::0::1::::<>HSlider<>::
 Options.gd::GDScript::-1::1699894914::0::1::::<>Control<>::

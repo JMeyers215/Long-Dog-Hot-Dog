@@ -79,15 +79,16 @@ func load_game():
 
 
 func _notification(what: int) -> void:
-	if what == NOTIFICATION_WM_CLOSE_REQUEST:
+	if what == NOTIFICATION_WM_CLOSE_REQUEST || what == NOTIFICATION_WM_GO_BACK_REQUEST:
 		save_game()
 		get_tree().quit()
 
 func buy_item(equipped, cost):
-	total_count -= cost
-	if equipped == item_1_id:
-		item_1_bought = true
-	elif equipped == item_2_id:
-		item_2_bought = true
-	elif equipped == item_3_id:
-		item_3_bought = true
+	if cost < total_count:
+		total_count -= cost
+		if equipped == item_1_id:
+			item_1_bought = true
+		elif equipped == item_2_id:
+			item_2_bought = true
+		elif equipped == item_3_id:
+			item_3_bought = true

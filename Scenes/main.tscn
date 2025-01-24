@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://cvuu3eqg28sc"]
+[gd_scene load_steps=29 format=3 uid="uid://cvuu3eqg28sc"]
 
 [ext_resource type="Script" path="res://Scripts/gamemanager.gd" id="1_4y737"]
 [ext_resource type="Texture2D" uid="uid://blxpllk2dytqa" path="res://Assets/Tiles/background tileset.png" id="1_aeraw"]
@@ -150,6 +150,9 @@ sources/10 = SubResource("TileSetAtlasSource_may3a")
 [sub_resource type="LabelSettings" id="LabelSettings_s8uxg"]
 font_size = 48
 shadow_color = Color(0.152941, 0.152941, 0.152941, 0.545098)
+
+[sub_resource type="Theme" id="Theme_v7ehl"]
+default_font_size = 45
 
 [sub_resource type="GDScript" id="GDScript_l8mp1"]
 script/source = "extends Control
@@ -345,19 +348,12 @@ offset_bottom = 730.0
 
 [node name="TitleButton" type="Button" parent="UIController/PauseScreen"]
 layout_mode = 0
-offset_left = 577.662
-offset_top = 617.0
-offset_right = 764.662
-offset_bottom = 685.0
+offset_left = 628.856
+offset_top = 561.333
+offset_right = 950.856
+offset_bottom = 673.333
+theme = SubResource("Theme_v7ehl")
 text = "Return to Title"
-
-[node name="QuitButton" type="Button" parent="UIController/PauseScreen"]
-layout_mode = 0
-offset_left = 800.602
-offset_top = 617.0
-offset_right = 987.602
-offset_bottom = 685.0
-text = "Quit Game"
 
 [node name="WinScreen" type="Control" parent="UIController"]
 visible = false
@@ -393,37 +389,45 @@ offset_bottom = 508.0
 z_index = 13
 z_as_relative = false
 layout_mode = 2
-offset_left = 517.835
-offset_top = 396.0
-offset_right = 749.835
-offset_bottom = 487.0
+offset_left = 619.278
+offset_top = 402.0
+offset_right = 851.278
+offset_bottom = 493.0
 text = "Return to Title"
-
-[node name="QuitButton" type="Button" parent="UIController/WinScreen"]
-z_index = 11
-z_as_relative = false
-layout_mode = 2
-offset_left = 767.835
-offset_top = 396.0
-offset_right = 999.835
-offset_bottom = 487.0
-text = "Quit Game"
 
 [node name="RestartButton" type="Button" parent="UIController/WinScreen"]
 layout_mode = 0
-offset_left = 267.835
-offset_top = 396.0
-offset_right = 499.835
-offset_bottom = 487.0
+offset_left = 376.521
+offset_top = 403.0
+offset_right = 608.521
+offset_bottom = 494.0
 text = "Restart"
 
 [node name="HotDogNoise" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_p6f3t")
 bus = &"SFX"
 
+[node name="QuitButton2" type="Button" parent="HotDogNoise"]
+visible = false
+offset_left = 655.0
+offset_top = 414.75
+offset_right = 842.0
+offset_bottom = 482.75
+text = "Quit Game"
+
+[node name="QuitButton" type="Button" parent="HotDogNoise"]
+visible = false
+z_index = 11
+z_as_relative = false
+offset_left = 813.93
+offset_top = 381.0
+offset_right = 1045.93
+offset_bottom = 472.0
+text = "Quit Game"
+
 [connection signal="timeout" from="MovementTick" to="." method="_on_movement_tick_timeout"]
 [connection signal="pressed" from="UIController/PauseScreen/TitleButton" to="UIController/PauseScreen" method="_on_title_button_pressed"]
-[connection signal="pressed" from="UIController/PauseScreen/QuitButton" to="UIController/PauseScreen" method="_on_quit_button_pressed"]
 [connection signal="pressed" from="UIController/WinScreen/TitleButton" to="UIController/PauseScreen" method="_on_title_button_pressed"]
-[connection signal="pressed" from="UIController/WinScreen/QuitButton" to="UIController/PauseScreen" method="_on_quit_button_pressed"]
 [connection signal="pressed" from="UIController/WinScreen/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="HotDogNoise/QuitButton2" to="UIController/PauseScreen" method="_on_quit_button_pressed"]
+[connection signal="pressed" from="HotDogNoise/QuitButton" to="UIController/PauseScreen" method="_on_quit_button_pressed"]

@@ -31,6 +31,7 @@ func _process(delta: float) -> void:
 		$EquipButton.visible = true
 	if equipped_id == Global.equipped:
 		$EquipButton.text = "Unequip"
+		equipped = true
 	else:
 		$EquipButton.text = "Equip"
 
@@ -48,7 +49,7 @@ func _on_item_button_pressed() -> void:
 
 func _on_equip_button_pressed() -> void:
 	if equipped_id == Global.equipped:
-		Global.equipped = 0
+		Global.equipped = -1
 	else:
 		Global.equipped = equipped_id
 
